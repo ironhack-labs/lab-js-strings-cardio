@@ -39,7 +39,7 @@ console.log(string3.repeat(3), "Batman");
 // Using the string method .slice(), access and print to the console the name of your favorite fruit from a given string
 
 const fruit = "banana apple mango orange lemon kiwi watermelon grapes pear pineapple";
-
+console.log(fruit.slice(7,12));
 // Your code here...
 
 
