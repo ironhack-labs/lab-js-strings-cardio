@@ -4,6 +4,8 @@
 // Write code that prints out to the console the index of the character “j” in
 
 const string1 = "My favorite dessert is jello";
+const indexj = string1.indexOf("j");
+console.log(indexj);
 
 // Your code here...
 
