@@ -17,6 +17,9 @@ const string2 = "ABCDEFGHJKLO";
 
 // Your code here...
 
+const newString = string2[string2.indexOf("C")]+string2[string2.indexOf("O")]+string2[string2.indexOf("O")]+string2[string2.indexOf("L")];
+console.log(newString);
+
 
 
 
