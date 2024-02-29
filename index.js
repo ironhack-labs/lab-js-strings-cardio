@@ -6,8 +6,7 @@
 const string1 = "My favorite dessert is jello";
 
 // Your code here...
-
-
+console.log(string1.indexOf("j"));
 
 
 /*******************************************
@@ -18,8 +17,8 @@ const string1 = "My favorite dessert is jello";
 const string2 = "ABCDEFGHJKLO";
 
 // Your code here...
-
-
+let cool  = string2[string2.indexOf("C")] + string2[string2.indexOf("O")] + string2[string2.indexOf("O")] + string2[string2.indexOf("L")];
+console.log(cool);
 
 
 /*****************************************************
@@ -30,7 +29,7 @@ const string2 = "ABCDEFGHJKLO";
 const string3 = "Na";
 
 // Your code here...
-
+console.log(string3.repeat(3), "Batman");
 
 
 
