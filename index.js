@@ -29,10 +29,9 @@ console.log(newString);
 // Using the method .repeat() and the provided string, print out the text "NaNaNaNa Batman!" in the console.
 
 const string3 = "Na";
+const message = string3.repeat(4) +" Batman!"
 
-// Your code here...
-
-
+console.log(message);
 
 
 /*******************************************
