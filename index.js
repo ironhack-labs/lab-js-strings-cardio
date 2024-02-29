@@ -41,6 +41,9 @@ console.log(message);
 
 const fruit = "banana apple mango orange lemon kiwi watermelon grapes pear pineapple";
 
+const favouriteFruit = fruit.slice(26,31);
+console.log(favouriteFruit);
+
 // Your code here...
 
 
