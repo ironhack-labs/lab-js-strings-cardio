@@ -41,11 +41,11 @@ console.log(message);
 
 const fruit = "banana apple mango orange lemon kiwi watermelon grapes pear pineapple";
 
-const favouriteFruit = fruit.slice(26,31);
-console.log(favouriteFruit);
+
 
 // Your code here...
-
+const favouriteFruit = fruit.slice(26,31);
+console.log(favouriteFruit);
 
 
 /***************************************************
@@ -81,9 +81,13 @@ else (console.log("The string does not include the word 'oxygen'"));
 const string4 = "zEAWrTC9EgtxmK9w1";
 
 
+
+
+
 // a) Print the string length
 // Your code here ...
-
+console.log(string4.length);
 
 // b) Print the last character in the string
 // Your code here ...
+console.log(string4[string4.length-1]);
