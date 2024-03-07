@@ -3,47 +3,46 @@
 *******************************************/
 // Write code that prints out to the console the index of the character “j” in
 
-const string1 = "My favorite dessert is jello";
+const string1 = "My favorite dessert is jello"
 
 // Your code here...
 
-
-
-
+const jello = string1.length
+console.log(string1.charAt(string1.length -5));
 /*******************************************
     Iteration 2 | Concatenate Characters
 *******************************************/
 // Make a new string with the text "COOL" by using only the characters available in the provided string and the bracket notation
 
-const string2 = "ABCDEFGHJKLO";
+const string2 = "ABCDEFGHJKLO"
 
 // Your code here...
-
-
-
+const str3 = `${string2[2]}${string2[11]}${string2[11]}${string2[10]}`
+console.log(str3)
 
 /*****************************************************
     Iteration 3 | Repeat a String and Concatenate
 *****************************************************/
 // Using the method .repeat() and the provided string, print out the text "NaNaNaNa Batman!" in the console.
 
-const string3 = "Na";
+const string3 = "Na"
 
 // Your code here...
-
-
-
+const naStr = string3.repeat(4) + " " + "Batman!"
+console.log(naStr)
 
 /*******************************************
        Iteration 4 | Fruite Slice
 *******************************************/
 // Using the string method .slice(), access and print to the console the name of your favorite fruit from a given string
 
-const fruit = "banana apple mango orange lemon kiwi watermelon grapes pear pineapple";
+const fruit =
+  "banana apple mango orange lemon kiwi watermelon grapes pear pineapple"
 
 // Your code here...
 
-
+const favoriteFruit = fruit.slice(32, 36)
+console.log(favoriteFruit)
 
 /***************************************************
     Iteration 5 | Check If Strings Include a Word
@@ -52,30 +51,26 @@ const fruit = "banana apple mango orange lemon kiwi watermelon grapes pear pinea
 // If a string includes the word "oxygen" print to the console message "The string includes the word 'oxygen'",
 // else print the message "The string does not include the word 'oxygen'".
 
-const funnyHeadline1 = "Breathing oxygen linked to staying alive";
-const funnyHeadline2 = "Students Cook & Serve Grandparents";
-
+const funnyHeadline1 = "Breathing oxygen linked to staying alive"
+const funnyHeadline2 = "Students Cook & Serve Grandparents"
 
 // Check the first headline
 // Your code here ...
 
-
 // Check the second headline
 // Your code here ...
-
-
 
 /*******************************************
        Iteration 6 | String Length
 *******************************************/
 // Using console.log() print to the console the length of the string and the last character in the string.
 
-const string4 = "zEAWrTC9EgtxmK9w1";
-
+const string4 = "zEAWrTC9EgtxmK9w1"
 
 // a) Print the string length
 // Your code here ...
-
+const stringLength = string4.length
 
 // b) Print the last character in the string
 // Your code here ...
+console.log("last character:", string4.charAt(stringLength - 1))
