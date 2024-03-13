@@ -4,7 +4,7 @@
 // Write code that prints out to the console the index of the character “j” in
 
 const string1 = "My favorite dessert is jello";
-
+console.log(`Index of j is:${string1.indexOf('j')}`)
 // Your code here...
 
 
@@ -18,6 +18,8 @@ const string1 = "My favorite dessert is jello";
 const string2 = "ABCDEFGHJKLO";
 
 // Your code here...
+const newString = string2[2] + string2[string2.length - 1] + string2[string2.length - 1] + string2[string2.length - 2];
+console.log(newString);
 
 
 
@@ -27,10 +29,9 @@ const string2 = "ABCDEFGHJKLO";
 *****************************************************/
 // Using the method .repeat() and the provided string, print out the text "NaNaNaNa Batman!" in the console.
 
-const string3 = "Na";
-
 // Your code here...
-
+const string3 = "Na";
+console.log(`${string3.repeat(4)} Batman!`);
 
 
 
@@ -42,7 +43,7 @@ const string3 = "Na";
 const fruit = "banana apple mango orange lemon kiwi watermelon grapes pear pineapple";
 
 // Your code here...
-
+console.log(fruit.slice(7, 12));
 
 
 /***************************************************
@@ -58,10 +59,20 @@ const funnyHeadline2 = "Students Cook & Serve Grandparents";
 
 // Check the first headline
 // Your code here ...
-
-
+let result1 = funnyHeadline1.includes("oxygen");
+checkWord(result1);
 // Check the second headline
 // Your code here ...
+let result2 = funnyHeadline2.includes("oxygen");
+checkWord(result2);
+
+function checkWord(word) {
+    if (word) {
+        console.log("The string includes the word 'oxygen'");
+    } else {
+        console.log("The string does not include the word 'oxygen'");
+    }
+}
 
 
 
@@ -75,7 +86,8 @@ const string4 = "zEAWrTC9EgtxmK9w1";
 
 // a) Print the string length
 // Your code here ...
-
+console.log(string4.length);
 
 // b) Print the last character in the string
 // Your code here ...
+console.log(string4[string4.length - 1]);
