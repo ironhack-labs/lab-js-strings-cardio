@@ -6,11 +6,7 @@
 const string1 = "My favorite dessert is jello";
 
 // Your code here...
-for (let i = 0; i < string1.length; i++) {
-    if (string1[i] === "j") {
-      console.log(i);
-    }
-  }
+console.log(string1.indexOf('j'));
 
 
 
