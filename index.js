@@ -6,7 +6,7 @@
 const string1 = "My favorite dessert is jello";
 
 // Your code here...
-
+console.log(string1.indexOf('j'));
 
 
 
@@ -18,7 +18,7 @@ const string1 = "My favorite dessert is jello";
 const string2 = "ABCDEFGHJKLO";
 
 // Your code here...
-
+console.log(`${string2[2]}${string2.charAt(string2.length - 1)}${string2.charAt(string2.length - 1)}${string2.charAt(string2.length - 2)}`);
 
 
 
@@ -30,19 +30,20 @@ const string2 = "ABCDEFGHJKLO";
 const string3 = "Na";
 
 // Your code here...
-
+let stringThree = `${string3.repeat(4)} Batman!`;
+console.log(stringThree);
 
 
 
 /*******************************************
-       Iteration 4 | Fruite Slice
+       Iteration 4 | Fruit Slice
 *******************************************/
 // Using the string method .slice(), access and print to the console the name of your favorite fruit from a given string
 
 const fruit = "banana apple mango orange lemon kiwi watermelon grapes pear pineapple";
 
 // Your code here...
-
+console.log(fruit.slice(19, 25))
 
 
 /***************************************************
@@ -58,11 +59,19 @@ const funnyHeadline2 = "Students Cook & Serve Grandparents";
 
 // Check the first headline
 // Your code here ...
-
+if (funnyHeadline1.includes("oxygen") === true) {
+    console.log("The string includes the word 'oxygen'");
+  } else {
+    console.log("The string does not include the word 'oxygen'");
+  }
 
 // Check the second headline
 // Your code here ...
-
+if (funnyHeadline2.includes("oxygen") === true) {
+    console.log("The string includes the word 'oxygen'");
+  } else {
+    console.log("The string does not include the word 'oxygen'");
+  }
 
 
 /*******************************************
@@ -75,7 +84,8 @@ const string4 = "zEAWrTC9EgtxmK9w1";
 
 // a) Print the string length
 // Your code here ...
-
+console.log(string4.length);
 
 // b) Print the last character in the string
 // Your code here ...
+console.log(`${string4.charAt(string4.length - 1)}`);
