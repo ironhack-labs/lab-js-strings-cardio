@@ -7,6 +7,13 @@ const string1 = "My favorite dessert is jello";
 
 // Your code here...
 
+function findIndex(string) {
+    return string.indexOf("j");
+}
+
+let index = findIndex(string1);
+console.log(index);
+
 
 
 
@@ -18,7 +25,18 @@ const string1 = "My favorite dessert is jello";
 const string2 = "ABCDEFGHJKLO";
 
 // Your code here...
+function concatenateCharacters(string) {
+    let newString = "";
+    let desiredString = "COOL"
+    for(let char of desiredString) {
+        newString += string[string.indexOf(char)];
+    }
 
+    return newString;
+}
+
+let newString = concatenateCharacters(string2);
+console.log(newString);
 
 
 
@@ -30,6 +48,11 @@ const string2 = "ABCDEFGHJKLO";
 const string3 = "Na";
 
 // Your code here...
+function repeatConcatenate(string){
+    return string.repeat(3) + " Batman!";
+}
+
+console.log(repeatConcatenate(string3));
 
 
 
@@ -42,8 +65,12 @@ const string3 = "Na";
 const fruit = "banana apple mango orange lemon kiwi watermelon grapes pear pineapple";
 
 // Your code here...
+function getFavoriteFruit(fruits, favoriteFruit) {
+    let startIndex = fruits.indexOf(favoriteFruit)
+    return fruits.slice(startIndex, startIndex + favoriteFruit.length + 1);
+}
 
-
+console.log(getFavoriteFruit(fruit, "mango"));
 
 /***************************************************
     Iteration 5 | Check If Strings Include a Word
@@ -58,11 +85,21 @@ const funnyHeadline2 = "Students Cook & Serve Grandparents";
 
 // Check the first headline
 // Your code here ...
+function isHeadlineOxygen(headline) {
+    if(headline.includes("oxygen")){
+        console.log("The string includes the word 'oxygen'");
+    } 
+    else{
+        console.log("The string does not include the word 'oxygen'");
+    }
+}
+
+isHeadlineOxygen(funnyHeadline1);
 
 
 // Check the second headline
 // Your code here ...
-
+isHeadlineOxygen(funnyHeadline2);
 
 
 /*******************************************
@@ -75,7 +112,15 @@ const string4 = "zEAWrTC9EgtxmK9w1";
 
 // a) Print the string length
 // Your code here ...
+function getLength(string) {
+    return string.length;
+}
+console.log(getLength(string4));
 
 
 // b) Print the last character in the string
 // Your code here ...
+function getLastCharacter(string) {
+    return string.at(string.length - 1);
+}
+console.log(getLastCharacter(string4));
