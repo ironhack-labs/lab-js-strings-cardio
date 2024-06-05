@@ -7,7 +7,7 @@ const string1 = "My favorite dessert is jello";
 
 // Your code here...
 
-
+console.log(string1[23]);
 
 
 /*******************************************
@@ -18,7 +18,8 @@ const string1 = "My favorite dessert is jello";
 const string2 = "ABCDEFGHJKLO";
 
 // Your code here...
-
+let str= string2[2] + string2[11] + string2[11] + string2[10];
+console.log(str);
 
 
 
@@ -30,7 +31,8 @@ const string2 = "ABCDEFGHJKLO";
 const string3 = "Na";
 
 // Your code here...
-
+let result = string3.repeat(4);
+console.log(result + " Batman!");
 
 
 
@@ -42,7 +44,8 @@ const string3 = "Na";
 const fruit = "banana apple mango orange lemon kiwi watermelon grapes pear pineapple";
 
 // Your code here...
-
+let faveFruit = fruit.slice(37,47);
+console.log(faveFruit);
 
 
 /***************************************************
@@ -54,14 +57,17 @@ const fruit = "banana apple mango orange lemon kiwi watermelon grapes pear pinea
 
 const funnyHeadline1 = "Breathing oxygen linked to staying alive";
 const funnyHeadline2 = "Students Cook & Serve Grandparents";
+if (funnyHeadline1.includes("oxygen"))
+    {
+    console.log("The string includes the word 'oxygen'.");
+}
+if (funnyHeadline2.includes("oxygen")) {
+    console.log("The string includes the word 'oxygen'.");
+}
+else {
+    console.log("The string does not include the word 'oxygen'.");
+}
 
-
-// Check the first headline
-// Your code here ...
-
-
-// Check the second headline
-// Your code here ...
 
 
 
@@ -75,7 +81,8 @@ const string4 = "zEAWrTC9EgtxmK9w1";
 
 // a) Print the string length
 // Your code here ...
-
+console.log(string4.length);
 
 // b) Print the last character in the string
 // Your code here ...
+console.log(string4[16]);
