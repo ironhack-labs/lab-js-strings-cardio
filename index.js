@@ -6,9 +6,10 @@
 const string1 = "My favorite dessert is jello";
 
 // Your code here...
+const character = 'j'
+const index = string1.indexOf(character);
 
-
-
+console.log(index)
 
 /*******************************************
     Iteration 2 | Concatenate Characters
@@ -18,9 +19,18 @@ const string1 = "My favorite dessert is jello";
 const string2 = "ABCDEFGHJKLO";
 
 // Your code here...
+//new
+const indexes = [2, 11, 11, 10];
+let newString = "";
 
+for(let i=0; i<indexes.length; i ++){
+    newString += string2[indexes[i]]
+}
+console.log(newString);
+//old
+//const newString = string2[2] + string2[11] + string2[11] + string[10];
 
-
+//console.log(newString);
 
 /*****************************************************
     Iteration 3 | Repeat a String and Concatenate
@@ -30,6 +40,7 @@ const string2 = "ABCDEFGHJKLO";
 const string3 = "Na";
 
 // Your code here...
+console.log(`${string3.repeat(4)} Batman!`);
 
 
 
@@ -42,6 +53,8 @@ const string3 = "Na";
 const fruit = "banana apple mango orange lemon kiwi watermelon grapes pear pineapple";
 
 // Your code here...
+const favoriteFruit = fruit.slice(0, 6);
+console.log(favoriteFruit)
 
 
 
