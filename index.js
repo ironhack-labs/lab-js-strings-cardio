@@ -6,7 +6,8 @@
 const string1 = "My favorite dessert is jello";
 
 // Your code here...
-
+    const letterJ = string1.indexOf("j");
+    console.log(letterJ, "is the index of the letter j in the string");
 
 
 
@@ -18,7 +19,8 @@ const string1 = "My favorite dessert is jello";
 const string2 = "ABCDEFGHJKLO";
 
 // Your code here...
-
+    const cool = string2[2] + string2[11] + string2[11] + string2[10];
+    console.log(cool, "is the new string created from the characters in the original string");
 
 
 
@@ -31,7 +33,8 @@ const string3 = "Na";
 
 // Your code here...
 
-
+    const batmanString = string3.repeat(4) + " Batman!";
+    console.log(batmanString, "is the new string created using the repeat method");
 
 
 /*******************************************
@@ -42,7 +45,8 @@ const string3 = "Na";
 const fruit = "banana apple mango orange lemon kiwi watermelon grapes pear pineapple";
 
 // Your code here...
-
+    const favFruit = fruit.slice(55, 59);
+    console.log(favFruit, "is my favorite fruit");
 
 
 /***************************************************
@@ -58,11 +62,13 @@ const funnyHeadline2 = "Students Cook & Serve Grandparents";
 
 // Check the first headline
 // Your code here ...
-
+    const headline1 = funnyHeadline1.includes("oxygen");
+    console.log(headline1 ? "The string includes the word 'oxygen'" : "The string does not include the word 'oxygen'");
 
 // Check the second headline
 // Your code here ...
-
+    const headline2 = funnyHeadline2.includes("oxygen");
+    console.log(headline2 ? "The string includes the word 'oxygen'" : "The string does not include the word 'oxygen'");
 
 
 /*******************************************
@@ -75,7 +81,8 @@ const string4 = "zEAWrTC9EgtxmK9w1";
 
 // a) Print the string length
 // Your code here ...
-
+    console.log(string4.length, "is the length of the string");
 
 // b) Print the last character in the string
 // Your code here ...
+    console.log(string4[string4.length - 1], "is the last character in the string");
