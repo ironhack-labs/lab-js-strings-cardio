@@ -6,9 +6,8 @@
 const string1 = "My favorite dessert is jello";
 
 // Your code here...
-
-
-
+const char1 = string1.indexOf("j");
+console.log(char1);
 
 /*******************************************
     Iteration 2 | Concatenate Characters
@@ -18,9 +17,15 @@ const string1 = "My favorite dessert is jello";
 const string2 = "ABCDEFGHJKLO";
 
 // Your code here...
+const char2 = string2.indexOf("C");
+const char3 = string2.indexOf("O");
+const char4 = string2.indexOf("L");
+console.log(char2);
+console.log(char3);
+console.log(char4);
 
-
-
+const coolString = string2[2] + string2[11] + string2[11] + string2[10];
+console.log(coolString);
 
 /*****************************************************
     Iteration 3 | Repeat a String and Concatenate
@@ -30,20 +35,24 @@ const string2 = "ABCDEFGHJKLO";
 const string3 = "Na";
 
 // Your code here...
-
-
-
+const concatenatedRepeat = string3.repeat(4) + " " + "Batman!";
+console.log(concatenatedRepeat);
 
 /*******************************************
        Iteration 4 | Fruite Slice
 *******************************************/
 // Using the string method .slice(), access and print to the console the name of your favorite fruit from a given string
 
-const fruit = "banana apple mango orange lemon kiwi watermelon grapes pear pineapple";
+const fruit =
+  "banana apple mango orange lemon kiwi watermelon grapes pear pineapple";
 
 // Your code here...
-
-
+const favoriteFruit1 = fruit.indexOf("watermelon");
+console.log(favoriteFruit1);
+const favoriteFruit2 = fruit.indexOf("grapes");
+console.log(favoriteFruit2);
+const sliceFruit = fruit.slice(37, 48);
+console.log(sliceFruit);
 
 /***************************************************
     Iteration 5 | Check If Strings Include a Word
@@ -55,16 +64,17 @@ const fruit = "banana apple mango orange lemon kiwi watermelon grapes pear pinea
 const funnyHeadline1 = "Breathing oxygen linked to staying alive";
 const funnyHeadline2 = "Students Cook & Serve Grandparents";
 
-
 // Check the first headline
 // Your code here ...
-
-
+const word = "oxygen";
+const isTrue="The string includes the word 'oxygen'";
+const isFalse="The string does not include the word 'oxygen'";
+const containsWordFirstHeadline = funnyHeadline1.includes(word);
+if(funnyHeadline1.includes(word)){console.log(isTrue)}else{console.log(isFalse)};
 // Check the second headline
 // Your code here ...
-
-
-
+const containsWordSecondHeadline = funnyHeadline2.includes(word);
+if(funnyHeadline2.includes(word)){console.log(isTrue)}else{console.log(isFalse)};
 /*******************************************
        Iteration 6 | String Length
 *******************************************/
@@ -72,10 +82,9 @@ const funnyHeadline2 = "Students Cook & Serve Grandparents";
 
 const string4 = "zEAWrTC9EgtxmK9w1";
 
-
 // a) Print the string length
 // Your code here ...
-
-
+console.log(string4.length);
 // b) Print the last character in the string
 // Your code here ...
+console.log(string4[16]);
