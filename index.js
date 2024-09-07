@@ -6,7 +6,8 @@
 const string1 = "My favorite dessert is jello";
 
 // Your code here...
-
+const char1= string1.indexOf('j');
+console.log(char1);
 
 
 
@@ -18,6 +19,15 @@ const string1 = "My favorite dessert is jello";
 const string2 = "ABCDEFGHJKLO";
 
 // Your code here...
+const char2 = string2.indexOf("C");
+const char3 = string2.indexOf("O");
+const char4 = string2.indexOf("L");
+console.log(char2);
+console.log(char3);
+console.log(char4);
+
+const coolString = string2[2] + string2[11] + string2[11] + string2[10];
+console.log(coolString);
 
 
 
@@ -30,7 +40,8 @@ const string2 = "ABCDEFGHJKLO";
 const string3 = "Na";
 
 // Your code here...
-
+const BatmanStr = string3.repeat(4) + " " + "Batman!";
+console.log("batman Str", BatmanStr);
 
 
 
@@ -42,7 +53,8 @@ const string3 = "Na";
 const fruit = "banana apple mango orange lemon kiwi watermelon grapes pear pineapple";
 
 // Your code here...
-
+const ourFavFruit = fruit.slice(0, 6);
+console.log("banana", ourFavFruit);
 
 
 /***************************************************
@@ -54,7 +66,12 @@ const fruit = "banana apple mango orange lemon kiwi watermelon grapes pear pinea
 
 const funnyHeadline1 = "Breathing oxygen linked to staying alive";
 const funnyHeadline2 = "Students Cook & Serve Grandparents";
-
+const doesItHaveOxygen = funnyHeadLine1.includes("oxygen");
+if (doesItHaveOxygen) {
+    console.log(`The string includes the word 'oxygen'`);
+} else {
+    console.log(`The string does not include the word 'oxygen'`);
+    }
 
 // Check the first headline
 // Your code here ...
