@@ -5,9 +5,7 @@
 
 const string1 = "My favorite dessert is jello";
 
-// Your code here...
-
-
+console.log(string1.indexOf("j"))
 
 
 /*******************************************
@@ -16,8 +14,8 @@ const string1 = "My favorite dessert is jello";
 // Make a new string with the text "COOL" by using only the characters available in the provided string and the bracket notation
 
 const string2 = "ABCDEFGHJKLO";
-
-// Your code here...
+const coolString = string2[3] + string2[8] + string2[8] + string2[10];
+console.log(coolString)
 
 
 
@@ -27,11 +25,9 @@ const string2 = "ABCDEFGHJKLO";
 *****************************************************/
 // Using the method .repeat() and the provided string, print out the text "NaNaNaNa Batman!" in the console.
 
+
 const string3 = "Na";
-
-// Your code here...
-
-
+console.log(string3.repeat(4) + " Batman!");
 
 
 /*******************************************
@@ -41,8 +37,10 @@ const string3 = "Na";
 
 const fruit = "banana apple mango orange lemon kiwi watermelon grapes pear pineapple";
 
-// Your code here...
-
+const position = fruit.indexOf("watermelon");
+console.log(position)
+const favoriteFruit = fruit.slice(37,47)
+console.log(favoriteFruit)
 
 
 /***************************************************
@@ -55,15 +53,18 @@ const fruit = "banana apple mango orange lemon kiwi watermelon grapes pear pinea
 const funnyHeadline1 = "Breathing oxygen linked to staying alive";
 const funnyHeadline2 = "Students Cook & Serve Grandparents";
 
+if (funnyHeadline1.includes("oxygen")) {
+    console.log("The string includes the word 'oxygen'");
+  } else {
+    console.log("The string does not include the word 'oxygen'");
+  }
+// 2da
 
-// Check the first headline
-// Your code here ...
-
-
-// Check the second headline
-// Your code here ...
-
-
+if (funnyHeadline2.includes("oxygen")) {
+    console.log("The string includes the word 'oxygen'");
+  } else {
+    console.log("The string does not include the word 'oxygen'");
+  }
 
 /*******************************************
        Iteration 6 | String Length
@@ -74,8 +75,9 @@ const string4 = "zEAWrTC9EgtxmK9w1";
 
 
 // a) Print the string length
-// Your code here ...
-
+console.log(string4.length);
 
 // b) Print the last character in the string
-// Your code here ...
+console.log(string4[string4.length - 1]);
+
+// sean felices
