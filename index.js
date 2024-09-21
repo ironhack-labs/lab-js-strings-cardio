@@ -7,8 +7,8 @@ const string1 = "My favorite dessert is jello";
 
 // Your code here...
 
-
-
+const position = string1.indexOf('j')
+console.log(position)
 
 /*******************************************
     Iteration 2 | Concatenate Characters
@@ -18,9 +18,13 @@ const string1 = "My favorite dessert is jello";
 const string2 = "ABCDEFGHJKLO";
 
 // Your code here...
+const letra_c = string2.indexOf('C')
+const letra_o = string2.indexOf('O')
+const letra_l = string2.indexOf('L')
 
+const word = `${string2[letra_c]}${string2[letra_o]}${string2[letra_o]}${string2[letra_l]}`
 
-
+console.log(word)
 
 /*****************************************************
     Iteration 3 | Repeat a String and Concatenate
@@ -31,7 +35,7 @@ const string3 = "Na";
 
 // Your code here...
 
-
+console.log(string3.repeat(4) + ' Batman!')
 
 
 /*******************************************
@@ -43,6 +47,11 @@ const fruit = "banana apple mango orange lemon kiwi watermelon grapes pear pinea
 
 // Your code here...
 
+const indexFruit = fruit.indexOf('mango')
+const favoriteFruit = fruit.slice(indexFruit,18)
+
+console.log(indexFruit)
+console.log(favoriteFruit)
 
 
 /***************************************************
@@ -58,11 +67,23 @@ const funnyHeadline2 = "Students Cook & Serve Grandparents";
 
 // Check the first headline
 // Your code here ...
+const wordHeadLine1 = funnyHeadline1.includes('oxygen')
 
+if(wordHeadLine1){
+    console.log("The string includes the word 'oxygen'")
+}else{
+    console.log("The string does not include the word 'oxygen'")
+}
 
 // Check the second headline
 // Your code here ...
+const wordHeadLine2 = funnyHeadline2.includes('oxygen')
 
+if(wordHeadLine2){
+    console.log("The string includes the word 'oxygen'")
+}else{
+    console.log("The string does not include the word 'oxygen'")
+}
 
 
 /*******************************************
@@ -76,6 +97,9 @@ const string4 = "zEAWrTC9EgtxmK9w1";
 // a) Print the string length
 // Your code here ...
 
+console.log(string4.length)
 
 // b) Print the last character in the string
 // Your code here ...
+
+console.log(string4[string4.length-1])
