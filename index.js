@@ -7,7 +7,7 @@ const string1 = "My favorite dessert is jello";
 
 // Your code here...
 
-
+console.log(string1.indexOf("j"));
 
 
 /*******************************************
@@ -19,7 +19,12 @@ const string2 = "ABCDEFGHJKLO";
 
 // Your code here...
 
+const indexC = string2.indexOf("C")
+const indexO = string2.indexOf("O")
+const indexL = string2.indexOf("L")
 
+const coolString = string2[indexC] + string2[indexO] + string2[indexO] + string2[indexL];
+console.log(coolString);
 
 
 /*****************************************************
@@ -31,7 +36,7 @@ const string3 = "Na";
 
 // Your code here...
 
-
+console.log(string3.repeat(4) + " Batman!");
 
 
 /*******************************************
@@ -43,7 +48,11 @@ const fruit = "banana apple mango orange lemon kiwi watermelon grapes pear pinea
 
 // Your code here...
 
+const startIndex = fruit.indexOf("mango");
+const endIndex = startIndex + 5; // longitud de la palabra "mango"
 
+const favoriteFruit = fruit.slice(startIndex, endIndex);
+console.log(favoriteFruit);
 
 /***************************************************
     Iteration 5 | Check If Strings Include a Word
@@ -55,6 +64,17 @@ const fruit = "banana apple mango orange lemon kiwi watermelon grapes pear pinea
 const funnyHeadline1 = "Breathing oxygen linked to staying alive";
 const funnyHeadline2 = "Students Cook & Serve Grandparents";
 
+if (funnyHeadline1.includes("oxygen")) {
+    console.log("The string includes the word 'oxygen'");
+  } else {
+    console.log("The string does not include the word 'oxygen'");
+  }
+  
+  if (funnyHeadline2.includes("oxygen")) {
+    console.log("The string includes the word 'oxygen'");
+  } else {
+    console.log("The string does not include the word 'oxygen'");
+  }
 
 // Check the first headline
 // Your code here ...
@@ -72,6 +92,8 @@ const funnyHeadline2 = "Students Cook & Serve Grandparents";
 
 const string4 = "zEAWrTC9EgtxmK9w1";
 
+console.log(string4.length);
+console.log(string4[string4.length - 1]);
 
 // a) Print the string length
 // Your code here ...
