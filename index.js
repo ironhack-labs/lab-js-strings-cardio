@@ -6,9 +6,11 @@
 const string1 = "My favorite dessert is jello";
 
 // Your code here...
+// Encontrar el índice del carácter "j"
+const indexOfJ = string1.indexOf("j");
 
-
-
+// Imprimir el índice
+console.log("El índice de 'j' es:", indexOfJ);
 
 /*******************************************
     Iteration 2 | Concatenate Characters
@@ -18,6 +20,13 @@ const string1 = "My favorite dessert is jello";
 const string2 = "ABCDEFGHJKLO";
 
 // Your code here...
+const indexC = string2.indexOf('C')
+const index0 = string2.indexOf('O')
+const indexL = string2.indexOf('L')
+
+
+const coolString= string2[indexC] + string2[index0] + string2[index0] + string2[indexL]
+console.log(coolString)
 
 
 
@@ -30,8 +39,7 @@ const string2 = "ABCDEFGHJKLO";
 const string3 = "Na";
 
 // Your code here...
-
-
+console.log(string3.repeat(4)+ " Batman!")
 
 
 /*******************************************
@@ -42,8 +50,11 @@ const string3 = "Na";
 const fruit = "banana apple mango orange lemon kiwi watermelon grapes pear pineapple";
 
 // Your code here...
+const startIndex = fruit.indexOf("kiwi");
+const endIndex = startIndex + 5;
 
-
+const bestFruit = fruit.slice(startIndex,endIndex);
+console.log(bestFruit);
 
 /***************************************************
     Iteration 5 | Check If Strings Include a Word
@@ -55,15 +66,19 @@ const fruit = "banana apple mango orange lemon kiwi watermelon grapes pear pinea
 const funnyHeadline1 = "Breathing oxygen linked to staying alive";
 const funnyHeadline2 = "Students Cook & Serve Grandparents";
 
-
 // Check the first headline
-// Your code here ...
-
+if (funnyHeadline1.includes("oxygen")) {
+    console.log("The string includes the word 'oxygen'");
+} else {
+    console.log("The string does not include the word 'oxygen'");
+}
 
 // Check the second headline
-// Your code here ...
-
-
+if (funnyHeadline2.includes("oxygen")) {
+    console.log("The string includes the word 'oxygen'");
+} else {
+    console.log("The string does not include the word 'oxygen'");
+}
 
 /*******************************************
        Iteration 6 | String Length
@@ -71,11 +86,8 @@ const funnyHeadline2 = "Students Cook & Serve Grandparents";
 // Using console.log() print to the console the length of the string and the last character in the string.
 
 const string4 = "zEAWrTC9EgtxmK9w1";
-
-
 // a) Print the string length
-// Your code here ...
-
+console.log("La longitud de la cadena es:", string4.length);
 
 // b) Print the last character in the string
-// Your code here ...
+console.log("El último carácter de la cadena es:", string4[string4.length - 1]);
