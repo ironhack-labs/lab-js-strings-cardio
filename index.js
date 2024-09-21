@@ -7,7 +7,8 @@ const string1 = "My favorite dessert is jello";
 
 // Your code here...
 
-
+const position = string1.indexOf("j")
+console.log (position)
 
 
 /*******************************************
@@ -18,9 +19,13 @@ const string1 = "My favorite dessert is jello";
 const string2 = "ABCDEFGHJKLO";
 
 // Your code here...
+const positionC = string2.indexOf("C")
+const positionO = string2.indexOf("O")
+const positionL = string2.indexOf("L")
 
+const palabra = `${string2[positionC]}${string2[positionO]}${string2[positionO]}${string2[positionL]}`
 
-
+console.log (palabra)
 
 /*****************************************************
     Iteration 3 | Repeat a String and Concatenate
@@ -30,7 +35,7 @@ const string2 = "ABCDEFGHJKLO";
 const string3 = "Na";
 
 // Your code here...
-
+console.log(string3.repeat(4) + " Batman!");
 
 
 
@@ -42,6 +47,11 @@ const string3 = "Na";
 const fruit = "banana apple mango orange lemon kiwi watermelon grapes pear pineapple";
 
 // Your code here...
+const indexFruit = fruit.indexOf (mango)
+const favoriteFruit = fruit.slice(indexFruit,18)
+
+console.log(indexFruit)
+console.log(favoriteFruit)
 
 
 
@@ -58,11 +68,23 @@ const funnyHeadline2 = "Students Cook & Serve Grandparents";
 
 // Check the first headline
 // Your code here ...
+const wordHeadline1 = funnyHeadline1.includes("oxygen")
 
+if (wordHeadline1){
+    console.log("The string includesthe word oxygen")
+} else {
+    console.log("The string doesn't includesthe word oxygen")
+}
 
 // Check the second headline
 // Your code here ...
+const wordHeadline2 = funnyHeadline2.includes("oxygen")
 
+if (wordHeadline2){
+    console.log("The string includesthe word oxygen")
+} else {
+    console.log("The string doesn't includesthe word oxygen")
+}
 
 
 /*******************************************
@@ -75,7 +97,8 @@ const string4 = "zEAWrTC9EgtxmK9w1";
 
 // a) Print the string length
 // Your code here ...
-
+console.log(string4.length)
 
 // b) Print the last character in the string
 // Your code here ...
+console.log(string4[string4.length-1])
