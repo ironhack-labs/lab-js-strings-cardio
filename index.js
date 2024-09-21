@@ -7,6 +7,7 @@ const string1 = "My favorite dessert is jello";
 
 // Your code here...
 
+console.log(string1[23])
 
 
 
@@ -19,7 +20,8 @@ const string2 = "ABCDEFGHJKLO";
 
 // Your code here...
 
-
+const newString=string2[2] + string2[11] + string2[11] + string2[10]
+console.log(newString)
 
 
 /*****************************************************
@@ -28,10 +30,11 @@ const string2 = "ABCDEFGHJKLO";
 // Using the method .repeat() and the provided string, print out the text "NaNaNaNa Batman!" in the console.
 
 const string3 = "Na";
+const result = string3.repeat(4) + " Batman"
 
 // Your code here...
 
-
+console.log(result)
 
 
 /*******************************************
@@ -43,12 +46,13 @@ const fruit = "banana apple mango orange lemon kiwi watermelon grapes pear pinea
 
 // Your code here...
 
-
+const favoriteFruit = fruit.slice(13,18)
+console.log(favoriteFruit)
 
 /***************************************************
     Iteration 5 | Check If Strings Include a Word
 ***************************************************/
-// Using the string method .include(), check if the below strings with funny newspaper headlines include the word "oxygen".
+// Using the string method .includes(), check if the below strings with funny newspaper headlines include the word "oxygen".
 // If a string includes the word "oxygen" print to the console message "The string includes the word 'oxygen'",
 // else print the message "The string does not include the word 'oxygen'".
 
@@ -58,11 +62,25 @@ const funnyHeadline2 = "Students Cook & Serve Grandparents";
 
 // Check the first headline
 // Your code here ...
+const result1= (funnyHeadline1.includes("oxygen"))
 
+if (result1){
+    console.log("The string includes the word 'oxygen'")
+}
+else {
+    console.log("The string does not include the word 'oxygen'")
+}
 
 // Check the second headline
 // Your code here ...
+const result2 = (funnyHeadline2.includes("oxygen"))
 
+if (result2){
+    console.log("The string includes the word 'oxygen'")
+}
+else {
+    console.log("The string does not include the word 'oxygen'")
+}
 
 
 /*******************************************
@@ -75,7 +93,8 @@ const string4 = "zEAWrTC9EgtxmK9w1";
 
 // a) Print the string length
 // Your code here ...
-
+console.log(string4.length)
 
 // b) Print the last character in the string
 // Your code here ...
+console.log(string4.charAt(string4.length-1))
