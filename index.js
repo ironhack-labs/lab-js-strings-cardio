@@ -2,37 +2,28 @@
     Iteration 1 | Find index of a character
 *******************************************/
 // Write code that prints out to the console the index of the character “j” in
-
 const string1 = "My favorite dessert is jello";
 
-// Your code here...
-
-
-
+console.log(string1.indexOf("j"))
 
 /*******************************************
     Iteration 2 | Concatenate Characters
 *******************************************/
 // Make a new string with the text "COOL" by using only the characters available in the provided string and the bracket notation
-
 const string2 = "ABCDEFGHJKLO";
 
-// Your code here...
+const coolStr = string2[2] + string2[11] + string2[11] + string2[10]
 
-
-
+console.log(coolStr)
 
 /*****************************************************
     Iteration 3 | Repeat a String and Concatenate
 *****************************************************/
 // Using the method .repeat() and the provided string, print out the text "NaNaNaNa Batman!" in the console.
-
 const string3 = "Na";
+const batmanStr = string3.repeat(4) + " Batman!";
 
-// Your code here...
-
-
-
+console.log(batmanStr)
 
 /*******************************************
        Iteration 4 | Fruite Slice
@@ -41,9 +32,9 @@ const string3 = "Na";
 
 const fruit = "banana apple mango orange lemon kiwi watermelon grapes pear pineapple";
 
-// Your code here...
-
-
+const favoriteFruitIndex = fruit.indexOf("mango");
+const favoriteFruit = fruit.slice(favoriteFruitIndex, favoriteFruitIndex + 5);
+console.log(favoriteFruit);
 
 /***************************************************
     Iteration 5 | Check If Strings Include a Word
@@ -57,13 +48,19 @@ const funnyHeadline2 = "Students Cook & Serve Grandparents";
 
 
 // Check the first headline
-// Your code here ...
-
+if (funnyHeadline1.includes("oxygen")) {
+    console.log("The string includes the word 'oxygen'");
+ } else {
+    console.log("The string does not include the word 'oxygen'");
+ }
 
 // Check the second headline
-// Your code here ...
-
-
+ if (funnyHeadline2.includes("oxygen")) {
+    console.log("The string includes the word 'oxygen'");
+ } else {
+    console.log("The string does not include the word 'oxygen'");
+ }
+ 
 
 /*******************************************
        Iteration 6 | String Length
@@ -72,10 +69,8 @@ const funnyHeadline2 = "Students Cook & Serve Grandparents";
 
 const string4 = "zEAWrTC9EgtxmK9w1";
 
-
 // a) Print the string length
-// Your code here ...
-
+console.log(string4.length)
 
 // b) Print the last character in the string
-// Your code here ...
+console.log(string4[string4.length -1])
