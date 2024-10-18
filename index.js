@@ -5,6 +5,8 @@
 
 const string1 = "My favorite dessert is jello";
 
+console.log(string1.indexOf("j"))
+
 // Your code here...
 
 
@@ -16,8 +18,12 @@ const string1 = "My favorite dessert is jello";
 // Make a new string with the text "COOL" by using only the characters available in the provided string and the bracket notation
 
 const string2 = "ABCDEFGHJKLO";
-
+/*const c = string2.indexOf("C")
+const o = string2.indexOf("O")
+const l = string2.indexOf("L")*/
 // Your code here...
+let newStr = string2[string2.indexOf("C")] + string2[string2.indexOf("O")] + string2[string2.indexOf("O")] + string2[string2.indexOf("L")]
+console.log(newStr)
 
 
 
@@ -28,6 +34,9 @@ const string2 = "ABCDEFGHJKLO";
 // Using the method .repeat() and the provided string, print out the text "NaNaNaNa Batman!" in the console.
 
 const string3 = "Na";
+let newText = string3.repeat(4) + " Batman!"
+
+console.log(newText)
 
 // Your code here...
 
@@ -41,6 +50,8 @@ const string3 = "Na";
 
 const fruit = "banana apple mango orange lemon kiwi watermelon grapes pear pineapple";
 
+let favFruit = "watermelon"
+console.log(fruit.slice(fruit.indexOf(favFruit), fruit.indexOf(favFruit) + favFruit.length ))
 // Your code here...
 
 
@@ -55,6 +66,17 @@ const fruit = "banana apple mango orange lemon kiwi watermelon grapes pear pinea
 const funnyHeadline1 = "Breathing oxygen linked to staying alive";
 const funnyHeadline2 = "Students Cook & Serve Grandparents";
 
+if(funnyHeadline1.includes("oxygen")) {
+    console.log("The string includes the word 'oxygen'")
+} else {
+    console.log("The string does not include the word 'oxygen'")
+}
+
+if(funnyHeadline2.includes("oxygen")) {
+    console.log("The string includes the word 'oxygen'")
+} else {
+    console.log("The string does not include the word 'oxygen'")
+}
 
 // Check the first headline
 // Your code here ...
@@ -72,7 +94,7 @@ const funnyHeadline2 = "Students Cook & Serve Grandparents";
 
 const string4 = "zEAWrTC9EgtxmK9w1";
 
-
+console.log(string4.length, string4.slice(string4.length - 1))
 // a) Print the string length
 // Your code here ...
 
