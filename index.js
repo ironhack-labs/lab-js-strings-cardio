@@ -1,3 +1,4 @@
+
 /*******************************************
     Iteration 1 | Find index of a character
 *******************************************/
@@ -7,7 +8,9 @@ const string1 = "My favorite dessert is jello";
 
 // Your code here...
 
-
+let char = "j";
+let index = string1.lastIndexOf(char);
+console.log(index);
 
 
 /*******************************************
@@ -19,7 +22,8 @@ const string2 = "ABCDEFGHJKLO";
 
 // Your code here...
 
-
+const result = string2[2] + string2[string2.length -1] + string2[string2.length -1] + string2[string2.length -2];
+console.log(result);
 
 
 /*****************************************************
@@ -31,8 +35,9 @@ const string3 = "Na";
 
 // Your code here...
 
-
-
+const repeated = string3.repeat(4);
+const result1 = repeated + ' Batman!';
+console.log(result1);
 
 /*******************************************
        Iteration 4 | Fruite Slice
@@ -42,7 +47,8 @@ const string3 = "Na";
 const fruit = "banana apple mango orange lemon kiwi watermelon grapes pear pineapple";
 
 // Your code here...
-
+const favoriteFruit = fruit.slice(0, 6);
+console.log(favoriteFruit);
 
 
 /***************************************************
@@ -55,6 +61,17 @@ const fruit = "banana apple mango orange lemon kiwi watermelon grapes pear pinea
 const funnyHeadline1 = "Breathing oxygen linked to staying alive";
 const funnyHeadline2 = "Students Cook & Serve Grandparents";
 
+if (funnyHeadline1.includes("oxygen")) {
+    console.log("The string includes the word 'oxygen'")
+} else {
+    console.log("The string does not incluse the word 'oxygen'")
+}
+
+if (funnyHeadline2.includes("oxygen")) {
+    console.log("The string includes the word 'oxygen'")
+} else {
+    console.log("The string does not incluse the word 'oxygen'")
+}
 
 // Check the first headline
 // Your code here ...
@@ -75,7 +92,8 @@ const string4 = "zEAWrTC9EgtxmK9w1";
 
 // a) Print the string length
 // Your code here ...
-
+console.log(string4.length);
 
 // b) Print the last character in the string
 // Your code here ...
+console.log(string4[string4.length -1]);
