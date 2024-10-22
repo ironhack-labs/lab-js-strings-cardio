@@ -7,6 +7,7 @@ const string1 = "My favorite dessert is jello";
 
 // Your code here...
 
+console.log(string1.slice(23, 24));
 
 
 
@@ -19,7 +20,11 @@ const string2 = "ABCDEFGHJKLO";
 
 // Your code here...
 
+const firstLetter =  string2.slice(2,3);
+const secondLetter = string2.slice(11,12);
+const thirdLetter = string2.slice(10,11);
 
+console.log(`${firstLetter}${secondLetter}${secondLetter}${thirdLetter}`);
 
 
 /*****************************************************
@@ -28,9 +33,11 @@ const string2 = "ABCDEFGHJKLO";
 // Using the method .repeat() and the provided string, print out the text "NaNaNaNa Batman!" in the console.
 
 const string3 = "Na";
+const bruce = "Batman!";
 
 // Your code here...
 
+console.log(`${string3.repeat(4)} ${bruce}`);
 
 
 
@@ -43,7 +50,7 @@ const fruit = "banana apple mango orange lemon kiwi watermelon grapes pear pinea
 
 // Your code here...
 
-
+    console.log(fruit.slice(48, 53));
 
 /***************************************************
     Iteration 5 | Check If Strings Include a Word
@@ -59,11 +66,21 @@ const funnyHeadline2 = "Students Cook & Serve Grandparents";
 // Check the first headline
 // Your code here ...
 
+if (funnyHeadline1.includes("oxygen")) {
+    console.log("The string includes the word 'oxygen'")
+} else {
+    console.log("The string does not include the word 'oxygen'")
+}
+
 
 // Check the second headline
 // Your code here ...
 
-
+if (funnyHeadline2.includes("oxygen")) {
+    console.log("The string includes the word 'oxygen'");
+} else {
+    console.log("The string does not include the word 'oxygen'");
+}
 
 /*******************************************
        Iteration 6 | String Length
@@ -76,6 +93,9 @@ const string4 = "zEAWrTC9EgtxmK9w1";
 // a) Print the string length
 // Your code here ...
 
+console.log(string4.length);
 
 // b) Print the last character in the string
 // Your code here ...
+
+console.log(string4.slice(16,17));
