@@ -7,6 +7,7 @@ const string1 = "My favorite dessert is jello";
 
 // Your code here...
 
+console.log(string1.indexOf("j"));
 
 
 
@@ -16,10 +17,23 @@ const string1 = "My favorite dessert is jello";
 // Make a new string with the text "COOL" by using only the characters available in the provided string and the bracket notation
 
 const string2 = "ABCDEFGHJKLO";
-
+// let newStr=string2[2]+string2[11]+string2[11]+string2[10];
+// console.log(newStr);
 // Your code here...
 
-
+let cChar = "";
+let oChar = "";
+let lChar = "";
+for(let i=0;i<string2.length;i++){
+    if(string2[i] === "C"){
+        cChar += string2[i];
+    }else if(string2[i] === "O"){
+        oChar += string2[i];
+    }else if(string2[i] === "L"){
+        lChar += string2[i];
+    }
+}
+console.log(cChar+oChar+oChar+lChar);
 
 
 /*****************************************************
@@ -30,7 +44,7 @@ const string2 = "ABCDEFGHJKLO";
 const string3 = "Na";
 
 // Your code here...
-
+console.log(string3.repeat(4) + " Batman!");
 
 
 
@@ -42,8 +56,12 @@ const string3 = "Na";
 const fruit = "banana apple mango orange lemon kiwi watermelon grapes pear pineapple";
 
 // Your code here...
+// let favFruit = fruit.slice(7,12);
+// console.log(favFruit);
 
-
+let index = fruit.indexOf("mango");
+let favFruit = fruit.slice(index,index+5);
+console.log(favFruit);
 
 /***************************************************
     Iteration 5 | Check If Strings Include a Word
@@ -59,6 +77,8 @@ const funnyHeadline2 = "Students Cook & Serve Grandparents";
 // Check the first headline
 // Your code here ...
 
+console.log(funnyHeadline1.includes("oxygen"));
+console.log(funnyHeadline2.includes("oxygen"));
 
 // Check the second headline
 // Your code here ...
@@ -70,12 +90,14 @@ const funnyHeadline2 = "Students Cook & Serve Grandparents";
 *******************************************/
 // Using console.log() print to the console the length of the string and the last character in the string.
 
-const string4 = "zEAWrTC9EgtxmK9w1";
+const string4 = "zEAWrTC9EgtxmK9wA";
 
 
 // a) Print the string length
 // Your code here ...
 
+console.log(string4.length);
 
 // b) Print the last character in the string
 // Your code here ...
+console.log(string4[string4.length-1]);
