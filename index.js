@@ -6,8 +6,7 @@
 const string1 = "My favorite dessert is jello";
 
 // Your code here...
-
-
+console.log(string1.indexOf("j"));
 
 
 /*******************************************
@@ -18,8 +17,12 @@ const string1 = "My favorite dessert is jello";
 const string2 = "ABCDEFGHJKLO";
 
 // Your code here...
+// console.log(string2.indexOf("C"));
+// console.log(string2.indexOf("L"));
+// console.log(string2.indexOf("O"));
 
-
+const result2 = string2.charAt(2) + string2.charAt(string2.length -1) + string2.charAt(11) + string2.charAt(10);
+console.log(result2);
 
 
 /*****************************************************
@@ -30,8 +33,7 @@ const string2 = "ABCDEFGHJKLO";
 const string3 = "Na";
 
 // Your code here...
-
-
+console.log(`${string3.repeat(4)} Batman!`)
 
 
 /*******************************************
@@ -42,7 +44,9 @@ const string3 = "Na";
 const fruit = "banana apple mango orange lemon kiwi watermelon grapes pear pineapple";
 
 // Your code here...
+// console.log(fruit.indexOf("lemon"));
 
+console.log(fruit.slice(26,31));
 
 
 /***************************************************
@@ -58,10 +62,29 @@ const funnyHeadline2 = "Students Cook & Serve Grandparents";
 
 // Check the first headline
 // Your code here ...
+console.log(funnyHeadline1.includes("oxygen"));
+
+if (funnyHeadline1 === true){
+    console.log("The string includes the word 'oxygen'")
+}
+
+else {
+    console.log("The string does not include the word 'oxygen'")
+}
 
 
 // Check the second headline
 // Your code here ...
+
+console.log(funnyHeadline2.includes("oxygen"));
+
+if (funnyHeadline1 !== true){
+    console.log("The string includes the word 'oxygen'")
+}
+
+else {
+    console.log("The string does not include the word 'oxygen'")
+}
 
 
 
@@ -76,6 +99,11 @@ const string4 = "zEAWrTC9EgtxmK9w1";
 // a) Print the string length
 // Your code here ...
 
+console.log(string4.length);
 
 // b) Print the last character in the string
 // Your code here ...
+console.log(string4.slice(-1));
+console.log(string4.charAt(string4.length - 1));
+
+
