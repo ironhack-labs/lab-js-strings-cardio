@@ -4,8 +4,16 @@
 // Write code that prints out to the console the index of the character “j” in
 
 const string1 = "My favorite dessert is jello";
-
+let char =" "
 // Your code here...
+
+for(let i = 0; i < string1.length; i++){
+    if(string1[i] === "j"){
+        char += string1[i]
+    }
+}
+console.log(char)
+
 
 
 
@@ -16,10 +24,26 @@ const string1 = "My favorite dessert is jello";
 // Make a new string with the text "COOL" by using only the characters available in the provided string and the bracket notation
 
 const string2 = "ABCDEFGHJKLO";
-
+let newStr = ""
 // Your code here...
 
 
+for(let i = 0; i < string2.length; i++){
+    if(string2[i] === "C"){
+        newStr += string2[i]
+    }
+    
+    else if(string2[i] === "O"){
+        newStr += string2[i] + string2[i]
+    }
+}
+for(let i = 0; i < string2.length; i++){
+     if(string2[i] === "L"){
+        newStr += string2[i]  //preguntar si hay una forma de hacerlo en el mismo if
+    }
+}
+
+console.log(newStr)
 
 
 /*****************************************************
@@ -31,7 +55,7 @@ const string3 = "Na";
 
 // Your code here...
 
-
+console.log(`${string3.repeat(4)} Batman!`)
 
 
 /*******************************************
@@ -40,10 +64,11 @@ const string3 = "Na";
 // Using the string method .slice(), access and print to the console the name of your favorite fruit from a given string
 
 const fruit = "banana apple mango orange lemon kiwi watermelon grapes pear pineapple";
-
+let favFruit = fruit.slice(60)
 // Your code here...
 
-
+console.log(fruit.indexOf("pineapple"))
+console.log(favFruit)
 
 /***************************************************
     Iteration 5 | Check If Strings Include a Word
@@ -58,11 +83,21 @@ const funnyHeadline2 = "Students Cook & Serve Grandparents";
 
 // Check the first headline
 // Your code here ...
-
+if(funnyHeadline1.includes("oxygen")){
+        console.log("The string includes the word 'oxygen'")
+    }
+    else {
+        console.log("The string does not include the word 'oxygen'")
+    }
 
 // Check the second headline
 // Your code here ...
-
+if(funnyHeadline2.includes("oxygen")){
+        console.log("The string includes the word 'oxygen'")
+    }
+    else {
+        console.log("The string does not include the word 'oxygen'")
+    }
 
 
 /*******************************************
@@ -75,7 +110,8 @@ const string4 = "zEAWrTC9EgtxmK9w1";
 
 // a) Print the string length
 // Your code here ...
-
+console.log(string4.length)
 
 // b) Print the last character in the string
 // Your code here ...
+console.log(string4[string4.length-1])
