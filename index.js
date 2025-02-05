@@ -7,7 +7,9 @@ const string1 = "My favorite dessert is jello";
 
 // Your code here...
 
+let resultado = string1.indexOf("j");
 
+console.log(resultado);
 
 
 /*******************************************
@@ -19,7 +21,28 @@ const string2 = "ABCDEFGHJKLO";
 
 // Your code here...
 
+let stringCool = "";
+let charC = "";
+let charO = "";
+let charL = "";
 
+for (let i=0; i<string2.length; i++) {
+
+    if(string2[i] === "C") {
+        charC += string2[i];
+    }
+    else if(string2[i] === "O") {
+        charO += string2[i] + string2[i];
+    }
+    else if (string2[i] === "L") {
+        charL += string2[i];
+    }
+
+ 
+}
+stringCool= charC + charO + charL;
+
+console.log(stringCool);
 
 
 /*****************************************************
@@ -30,6 +53,8 @@ const string2 = "ABCDEFGHJKLO";
 const string3 = "Na";
 
 // Your code here...
+
+console.log(`${string3.repeat(4)} Batman!`);
 
 
 
@@ -43,6 +68,21 @@ const fruit = "banana apple mango orange lemon kiwi watermelon grapes pear pinea
 
 // Your code here...
 
+let frutaFavorita = "";
+let inicioSlice=0;
+
+for (let i=0; i<fruit.length; i++) {
+    if(fruit[i] === " ") {
+        frutaFavorita = fruit.slice(inicioSlice,i);
+        console.log(frutaFavorita);
+        inicioSlice = i+1;
+    }
+    
+    if(i === fruit.length-1) {
+        frutaFavorita = fruit.slice(inicioSlice);
+        console.log(frutaFavorita);
+    }
+}
 
 
 /***************************************************
