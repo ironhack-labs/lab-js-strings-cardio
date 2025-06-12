@@ -7,6 +7,7 @@ const string1 = "My favorite dessert is jello";
 
 // Your code here...
 
+console.log(string1.indexOf("j"))
 
 
 
@@ -19,7 +20,13 @@ const string2 = "ABCDEFGHJKLO";
 
 // Your code here...
 
+let positionC = string2.indexOf("C")
+let positionO = string2.indexOf("O")
+let positionL = string2.indexOf("L")
 
+let newString = string2[positionC] + string2[positionO] + string2[positionO] + string2[positionL]
+
+console.log(newString)
 
 
 /*****************************************************
@@ -31,7 +38,9 @@ const string3 = "Na";
 
 // Your code here...
 
+let newString2 = `${string3.repeat(4)} Batman!`
 
+console.log(newString2)
 
 
 /*******************************************
@@ -43,7 +52,10 @@ const fruit = "banana apple mango orange lemon kiwi watermelon grapes pear pinea
 
 // Your code here...
 
-
+let allFruits = fruit.slice(32,36)
+// let allFruits1 = fruit.split(" ")
+console.log(allFruits)
+// console.log(allFruits1[5])
 
 /***************************************************
     Iteration 5 | Check If Strings Include a Word
@@ -59,11 +71,23 @@ const funnyHeadline2 = "Students Cook & Serve Grandparents";
 // Check the first headline
 // Your code here ...
 
+if (funnyHeadline1.includes("oxygen")) {
+    console.log("The string includes the word 'oxygen'");
+}
+    else {
+        console.log("The string does not include the word 'oxygen'");
+    }
+
 
 // Check the second headline
 // Your code here ...
 
-
+if (funnyHeadline2.includes("oxygen")) {
+    console.log("The string includes the word 'oxygen'");
+}
+    else {
+        console.log("The string does not include the word 'oxygen'");
+    }
 
 /*******************************************
        Iteration 6 | String Length
@@ -71,7 +95,10 @@ const funnyHeadline2 = "Students Cook & Serve Grandparents";
 // Using console.log() print to the console the length of the string and the last character in the string.
 
 const string4 = "zEAWrTC9EgtxmK9w1";
+let lenght1 = string4.length
+let finalString = `${lenght1} ${string4[lenght1-1]}`
 
+console.log(finalString)
 
 // a) Print the string length
 // Your code here ...
