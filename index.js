@@ -6,7 +6,9 @@
 const string1 = "My favorite dessert is jello";
 
 // Your code here...
-
+let index = string1.indexOf("j");
+console.log(index)
+console.log(string1[index])
 
 
 
@@ -16,8 +18,18 @@ const string1 = "My favorite dessert is jello";
 // Make a new string with the text "COOL" by using only the characters available in the provided string and the bracket notation
 
 const string2 = "ABCDEFGHJKLO";
-
 // Your code here...
+let char = string2.indexOf("C");
+let char1 = string2.indexOf("O");
+let char2 = string2.indexOf("L");
+console.log(char, char1, char2)
+let cChar=(string2[char])
+let oChar=(string2[char1])
+let lChar=(string2[char2])
+
+console.log(cChar + oChar + oChar + lChar)
+
+
 
 
 
@@ -30,7 +42,8 @@ const string2 = "ABCDEFGHJKLO";
 const string3 = "Na";
 
 // Your code here...
-
+let result = string3.repeat(4)
+console.log(result + " " + "Batman")
 
 
 
@@ -42,7 +55,8 @@ const string3 = "Na";
 const fruit = "banana apple mango orange lemon kiwi watermelon grapes pear pineapple";
 
 // Your code here...
-
+let favoriteFruits = fruit.slice(13, 18)
+console.log(favoriteFruits)
 
 
 /***************************************************
@@ -58,11 +72,13 @@ const funnyHeadline2 = "Students Cook & Serve Grandparents";
 
 // Check the first headline
 // Your code here ...
-
+if (funnyHeadline1.includes("oxygen")) {
+    
+}
 
 // Check the second headline
 // Your code here ...
-
+funnyHeadline2.includes("oxygen")
 
 
 /*******************************************
@@ -71,7 +87,8 @@ const funnyHeadline2 = "Students Cook & Serve Grandparents";
 // Using console.log() print to the console the length of the string and the last character in the string.
 
 const string4 = "zEAWrTC9EgtxmK9w1";
-
+console.log(string4.length)
+console.log(string4[16])
 
 // a) Print the string length
 // Your code here ...
