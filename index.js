@@ -6,7 +6,7 @@
 const string1 = "My favorite dessert is jello";
 
 // Your code here...
-
+console.log(string1.indexOf("j"));
 
 
 
@@ -18,6 +18,9 @@ const string1 = "My favorite dessert is jello";
 const string2 = "ABCDEFGHJKLO";
 
 // Your code here...
+const newString = string2[2] + string2[11] + string2[11] + string2[10];
+
+ console.log(newString);
 
 
 
@@ -28,6 +31,7 @@ const string2 = "ABCDEFGHJKLO";
 // Using the method .repeat() and the provided string, print out the text "NaNaNaNa Batman!" in the console.
 
 const string3 = "Na";
+console.log(`I think the song goes like ${string3.repeat(4)} Batman!`);
 
 // Your code here...
 
@@ -38,11 +42,11 @@ const string3 = "Na";
        Iteration 4 | Fruite Slice
 *******************************************/
 // Using the string method .slice(), access and print to the console the name of your favorite fruit from a given string
-
 const fruit = "banana apple mango orange lemon kiwi watermelon grapes pear pineapple";
-
-// Your code here...
-
+console.log(fruit.slice(13, 18));
+/*const start = fruit.indexOf("mango");
+const favoritefruit = fruit.slice(start, start + "mango".length);
+console.log(favoritefruit);*/ //-another way
 
 
 /***************************************************
@@ -57,11 +61,18 @@ const funnyHeadline2 = "Students Cook & Serve Grandparents";
 
 
 // Check the first headline
-// Your code here ...
-
+if (funnyHeadline1.includes("oxygen")) {
+console.log("The String includes the word 'oxygen'");
+} else {
+    console.log("The String does not include the word 'oxygen'");
+}
 
 // Check the second headline
-// Your code here ...
+if (funnyHeadline2.includes("oxygen")) {
+    console.log("The String includes the word 'oxygen'");
+} else {
+    console.log("The String does not include the word 'oxygen'");
+}
 
 
 
@@ -71,6 +82,8 @@ const funnyHeadline2 = "Students Cook & Serve Grandparents";
 // Using console.log() print to the console the length of the string and the last character in the string.
 
 const string4 = "zEAWrTC9EgtxmK9w1";
+console.log(string4.length);
+console.log(string4[string4.length - 1]);
 
 
 // a) Print the string length
