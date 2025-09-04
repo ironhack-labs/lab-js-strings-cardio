@@ -5,7 +5,10 @@
 
 const string1 = "My favorite dessert is jello";
 
-// Your code here...
+const indexOfJ = string1.indexOf("j");
+
+console.log(string1[indexOfJ]);
+
 
 
 
@@ -18,6 +21,8 @@ const string1 = "My favorite dessert is jello";
 const string2 = "ABCDEFGHJKLO";
 
 // Your code here...
+const cool = string2[2] + string2[string2.length -1] + string2[string2.length -1] + string2[string2.length -2];
+console.log(cool);
 
 
 
@@ -29,7 +34,7 @@ const string2 = "ABCDEFGHJKLO";
 
 const string3 = "Na";
 
-// Your code here...
+console.log(string3.repeat(4) + " Batman!");
 
 
 
@@ -42,6 +47,8 @@ const string3 = "Na";
 const fruit = "banana apple mango orange lemon kiwi watermelon grapes pear pineapple";
 
 // Your code here...
+const favFruit = fruit.slice(fruit.indexOf("m"), fruit.indexOf("mango") + "mango".length);
+console.log(favFruit);
 
 
 
@@ -58,10 +65,22 @@ const funnyHeadline2 = "Students Cook & Serve Grandparents";
 
 // Check the first headline
 // Your code here ...
+if (funnyHeadline1.includes("oxygen")) {
+    console.log(`The string includes the word 'oxygen'`)
+}
+else {
+    console.log(`This string does not include the word 'oxygen'`)
+}
 
 
 // Check the second headline
 // Your code here ...
+if (funnyHeadline2.includes("oxygen")) {
+    console.log(`The string includes the word 'oxygen'`)
+}
+else {
+    console.log(`This string does not include the word 'oxygen'`)
+}
 
 
 
@@ -74,8 +93,14 @@ const string4 = "zEAWrTC9EgtxmK9w1";
 
 
 // a) Print the string length
-// Your code here ...
+
+console.log(string4.length);
 
 
 // b) Print the last character in the string
-// Your code here ...
+
+console.log(string4.slice(-1));
+
+// if you meant the w then it will be
+
+console.log(string4.slice(-2,-1));
