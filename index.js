@@ -6,7 +6,9 @@
 const string1 = "My favorite dessert is jello";
 
 // Your code here...
+const index = string1.indexOf("j");
 
+console.log(index);
 
 
 
@@ -18,8 +20,8 @@ const string1 = "My favorite dessert is jello";
 const string2 = "ABCDEFGHJKLO";
 
 // Your code here...
-
-
+const newString = string2[2] + string2[11] + string2[11] + string2[10];
+console.log(newString);
 
 
 /*****************************************************
@@ -30,7 +32,9 @@ const string2 = "ABCDEFGHJKLO";
 const string3 = "Na";
 
 // Your code here...
+const result = string3.repeat(3) + " " + "Batman!";
 
+console.log(result);
 
 
 
@@ -42,8 +46,14 @@ const string3 = "Na";
 const fruit = "banana apple mango orange lemon kiwi watermelon grapes pear pineapple";
 
 // Your code here...
+const firstIndex = fruit.indexOf("mango");
+const lastIndex = firstIndex + "mango".length;
+const favFruit = fruit.slice(firstIndex, lastIndex);
+console.log(favFruit);
 
-
+// const favFruits = fruit.slice(fruit.indexOf("mango"), fruit.indexOf("mango") + "mango".length) + " & " +
+// fruit.slice(fruit.indexOf("pineapple"), fruit.indexOf("pineapple") + "pineapple".length);
+// console.log(favFruits);
 
 /***************************************************
     Iteration 5 | Check If Strings Include a Word
@@ -55,14 +65,24 @@ const fruit = "banana apple mango orange lemon kiwi watermelon grapes pear pinea
 const funnyHeadline1 = "Breathing oxygen linked to staying alive";
 const funnyHeadline2 = "Students Cook & Serve Grandparents";
 
+function checkOxygen(text) {
+    if (text.includes("oxygen")) {
+        console.log(`The string includes the word 'oxygen'`)
+    }
+    else {
+        console.log(`The string does not include the word 'oxygen'`)
+    }
+
+}
+
 
 // Check the first headline
 // Your code here ...
-
+checkOxygen(funnyHeadline1);
 
 // Check the second headline
 // Your code here ...
-
+checkOxygen(funnyHeadline2);
 
 
 /*******************************************
@@ -76,6 +96,7 @@ const string4 = "zEAWrTC9EgtxmK9w1";
 // a) Print the string length
 // Your code here ...
 
-
+console.log(string4.length);
 // b) Print the last character in the string
 // Your code here ...
+console.log(string4[16]);
