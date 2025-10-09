@@ -5,10 +5,9 @@
 
 const string1 = "My favorite dessert is jello";
 
-// Your code here...
+// Your code
 
-
-
+console.log(string1.indexOf(`j`))
 
 /*******************************************
     Iteration 2 | Concatenate Characters
