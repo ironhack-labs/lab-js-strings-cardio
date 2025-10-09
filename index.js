@@ -27,8 +27,9 @@ console.log(stringNew);
 // Using the method .repeat() and the provided string, print out the text "NaNaNaNa Batman!" in the console.
 
 const string3 = "Na";
+const character = string3.repeat(3) + ' Batman!';
+console.log(character);
 
-// Your code here...
 
 
 
