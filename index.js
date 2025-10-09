@@ -82,8 +82,9 @@ if(funnyHeadline2.includes("oxygen")){
 const string4 = "zEAWrTC9EgtxmK9w1";
 
 
-// a) Print the string length
-// Your code here ...
+console.log(string4.length);
+
+console.log(string4.charAt(string4.length-1));
 
 
 // b) Print the last character in the string
