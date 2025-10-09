@@ -55,14 +55,14 @@ console.log(fruit.slice(i, i + fruitSelect.length));
 
 const funnyHeadline1 = "Breathing oxygen linked to staying alive";
 const funnyHeadline2 = "Students Cook & Serve Grandparents";
-
-
+const word = "oxygen";
+const message1 = "The string includes the word 'oxygen'";
+const message2 = "The string does not include the word 'oxygen'";
 // Check the first headline
-// Your code here ...
-
+console.log(funnyHeadline1.includes(word) ? message1 : message2);
 
 // Check the second headline
-// Your code here ...
+console.log(funnyHeadline2.includes(word) ? message1 : message2);
 
 
 
