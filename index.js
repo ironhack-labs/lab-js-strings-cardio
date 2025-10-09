@@ -15,8 +15,8 @@ console.log(string1.indexOf('j'));
 // Make a new string with the text "COOL" by using only the characters available in the provided string and the bracket notation
 
 const string2 = "ABCDEFGHJKLO";
-
-// Your code here...
+const stringNew = string2[string2.indexOf('C')] + string2[string2.indexOf('O')] + string2[string2.indexOf('O')] + string2[string2.indexOf('L')];
+console.log(stringNew);
 
 
 
