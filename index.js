@@ -29,8 +29,8 @@ console.log(finalString);
 // Using the method .repeat() and the provided string, print out the text "NaNaNaNa Batman!" in the console.
 
 const string3 = "Na";
+console.log(`${string3.repeat(3)} Batman!`);
 
-// Your code here...
 
 
 
@@ -41,8 +41,10 @@ const string3 = "Na";
 // Using the string method .slice(), access and print to the console the name of your favorite fruit from a given string
 
 const fruit = "banana apple mango orange lemon kiwi watermelon grapes pear pineapple";
+const foodPosition = fruit.indexOf("lemon");
+console.log(fruit.slice(foodPosition, foodPosition + 5));
 
-// Your code here...
+
 
 
 
