@@ -45,7 +45,7 @@ const fruit = "banana apple mango orange lemon kiwi watermelon grapes pear pinea
 
 // Your code here...
 
-
+console.log(fruit.slice(0,6))
 
 /***************************************************
     Iteration 5 | Check If Strings Include a Word
