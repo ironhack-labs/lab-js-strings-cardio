@@ -49,7 +49,9 @@ console.log(`${stringRepeat} ${batmanName}!`);
 
 const fruit = "banana apple mango orange lemon kiwi watermelon grapes pear pineapple";
 
-// Your code here...
+const myFavouriteFruit = fruit.slice(fruit.indexOf("pear"), fruit.indexOf("pear") + "pear".length);
+
+console.log(myFavouriteFruit);
 
 
 
