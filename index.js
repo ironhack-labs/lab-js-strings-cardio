@@ -5,7 +5,9 @@
 
 const string1 = "My favorite dessert is jello";
 
-// Your code here...
+const charPosition = string1.indexOf("j");
+
+console.log(charPosition);
 
 
 
@@ -35,7 +37,7 @@ const string3 = "Na";
 
 
 /*******************************************
-       Iteration 4 | Fruite Slice
+    Iteration 4 | Fruite Slice
 *******************************************/
 // Using the string method .slice(), access and print to the console the name of your favorite fruit from a given string
 
@@ -66,7 +68,7 @@ const funnyHeadline2 = "Students Cook & Serve Grandparents";
 
 
 /*******************************************
-       Iteration 6 | String Length
+    Iteration 6 | String Length
 *******************************************/
 // Using console.log() print to the console the length of the string and the last character in the string.
 
