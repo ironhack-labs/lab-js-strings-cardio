@@ -6,6 +6,8 @@
 const string1 = "My favorite dessert is jello";
 
 // Your code here...
+string1.indexOf("j");
+console.log(string1.indexOf("j"))
 
 
 
@@ -22,6 +24,7 @@ const string2 = "ABCDEFGHJKLO";
 
 
 
+
 /*****************************************************
     Iteration 3 | Repeat a String and Concatenate
 *****************************************************/
@@ -29,8 +32,10 @@ const string2 = "ABCDEFGHJKLO";
 
 const string3 = "Na";
 
+
 // Your code here...
 
+console.log(`${string3.repeat(4)} Batman!`);
 
 
 
@@ -41,7 +46,11 @@ const string3 = "Na";
 
 const fruit = "banana apple mango orange lemon kiwi watermelon grapes pear pineapple";
 
+
 // Your code here...
+
+console.log(fruit.length)
+console.log(fruit.slice(60))
 
 
 
@@ -56,14 +65,19 @@ const funnyHeadline1 = "Breathing oxygen linked to staying alive";
 const funnyHeadline2 = "Students Cook & Serve Grandparents";
 
 
+console.log(funnyHeadline1, funnyHeadline2.includes("oxygen"));
+
+
+
 // Check the first headline
 // Your code here ...
+console.log(funnyHeadline1.includes("oxygen"));
 
 
 // Check the second headline
 // Your code here ...
 
-
+console.log(funnyHeadline2.includes("oxygen"));
 
 /*******************************************
        Iteration 6 | String Length
@@ -76,6 +90,10 @@ const string4 = "zEAWrTC9EgtxmK9w1";
 // a) Print the string length
 // Your code here ...
 
+console.log(string4.length)
 
 // b) Print the last character in the string
 // Your code here ...
+
+const lastChar = string4[16]
+console.log(lastChar)
