@@ -6,8 +6,10 @@
 const string1 = "My favorite dessert is jello";
 
 // Your code here...
-
-
+let string1Index = string1.indexOf("j");
+console.log(string1Index);
+// I want to see the length of the string to verify via eyeball ;)
+console.log(string1.length); 
 
 
 /*******************************************
@@ -18,7 +20,8 @@ const string1 = "My favorite dessert is jello";
 const string2 = "ABCDEFGHJKLO";
 
 // Your code here...
-
+let coolString = string2[2] + string2[11] + string2[11] + string2[10];
+console.log(coolString);
 
 
 
@@ -30,7 +33,8 @@ const string2 = "ABCDEFGHJKLO";
 const string3 = "Na";
 
 // Your code here...
-
+const batman = string3.repeat(4) + " Batman!";
+console.log(batman);
 
 
 
@@ -42,8 +46,10 @@ const string3 = "Na";
 const fruit = "banana apple mango orange lemon kiwi watermelon grapes pear pineapple";
 
 // Your code here...
-
-
+// didnt want to count
+// console.log(fruit.length);
+const favoriteFruit = fruit.slice(60, 69);
+console.log(favoriteFruit);
 
 /***************************************************
     Iteration 5 | Check If Strings Include a Word
@@ -58,10 +64,23 @@ const funnyHeadline2 = "Students Cook & Serve Grandparents";
 
 // Check the first headline
 // Your code here ...
+let check1 = funnyHeadline1.includes("oxygen");
 
+if (check1) {
+    console.log("The string includes the word 'oxygen'");
+} else {
+    console.log("The string does not include the word 'oxygen'");
+}
 
 // Check the second headline
 // Your code here ...
+let check2 = funnyHeadline2.includes("oxygen");
+
+if (check2) {
+    console.log("The string includes the word 'oxygen'");
+} else {
+    console.log("The string does not include the word 'oxygen'");
+}
 
 
 
@@ -75,7 +94,9 @@ const string4 = "zEAWrTC9EgtxmK9w1";
 
 // a) Print the string length
 // Your code here ...
-
+console.log(string4.length);
 
 // b) Print the last character in the string
 // Your code here ...
+let lastChar = string4.length - 1;
+console.log(string4[lastChar]);
