@@ -4,6 +4,8 @@
 // Write code that prints out to the console the index of the character “j” in
 
 const string1 = "My favorite dessert is jello";
+const letterJ = string1.indexOf("j");
+console.log(letterJ);
 
 // Your code here...
 
@@ -16,9 +18,12 @@ const string1 = "My favorite dessert is jello";
 // Make a new string with the text "COOL" by using only the characters available in the provided string and the bracket notation
 
 const string2 = "ABCDEFGHJKLO";
+const letterC = string2.slice(2,3);
+const letterO = string2.slice(-1);
+const letterL = string2.slice(-2,-1);
 
 // Your code here...
-
+console.log(letterC + letterO + letterO + letterL) 
 
 
 
@@ -28,9 +33,10 @@ const string2 = "ABCDEFGHJKLO";
 // Using the method .repeat() and the provided string, print out the text "NaNaNaNa Batman!" in the console.
 
 const string3 = "Na";
-
+const batman = "Batman"
+const repeated = string3.repeat(4)
 // Your code here...
-
+console.log(`${repeated} ${batman}!`);
 
 
 
@@ -40,7 +46,9 @@ const string3 = "Na";
 // Using the string method .slice(), access and print to the console the name of your favorite fruit from a given string
 
 const fruit = "banana apple mango orange lemon kiwi watermelon grapes pear pineapple";
-
+const faveFruitIndex = fruit.indexOf("pear");
+const faveFruit = fruit.slice(55, 60);
+console.log(faveFruit)
 // Your code here...
 
 
@@ -54,7 +62,21 @@ const fruit = "banana apple mango orange lemon kiwi watermelon grapes pear pinea
 
 const funnyHeadline1 = "Breathing oxygen linked to staying alive";
 const funnyHeadline2 = "Students Cook & Serve Grandparents";
+const headline1Oxygen = funnyHeadline1.includes("oxygen")
+const headline2Oxygen = funnyHeadline2.includes("oxygen")
 
+if (headline1Oxygen === true) {
+    console.log ("This String includes the word 'oxygen'")
+} else {
+    console.log ("The string does not include the word 'oxygen'")
+}
+
+
+if (headline2Oxygen === true) {
+    console.log ("This String includes the word 'oxygen'")
+} else {
+    console.log ("The string does not include the word 'oxygen'")
+}
 
 // Check the first headline
 // Your code here ...
@@ -71,11 +93,13 @@ const funnyHeadline2 = "Students Cook & Serve Grandparents";
 // Using console.log() print to the console the length of the string and the last character in the string.
 
 const string4 = "zEAWrTC9EgtxmK9w1";
+const string4Length = string4.length
 
 
 // a) Print the string length
 // Your code here ...
-
+console.log(string4Length)
 
 // b) Print the last character in the string
 // Your code here ...
+console.log(string4.slice(-1));
