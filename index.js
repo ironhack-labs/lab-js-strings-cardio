@@ -4,9 +4,9 @@
 // Write code that prints out to the console the index of the character “j” in
 
 const string1 = "My favorite dessert is jello";
-
+const findJ = string1.indexOf("j");
+console.log(findJ);
 // Your code here...
-
 
 
 
@@ -16,9 +16,10 @@ const string1 = "My favorite dessert is jello";
 // Make a new string with the text "COOL" by using only the characters available in the provided string and the bracket notation
 
 const string2 = "ABCDEFGHJKLO";
+const cool = string2[2] + string2[11] + string2[11] + string2[10];
 
 // Your code here...
-
+console.log(cool);
 
 
 
@@ -30,9 +31,7 @@ const string2 = "ABCDEFGHJKLO";
 const string3 = "Na";
 
 // Your code here...
-
-
-
+console.log (string3.repeat(4) +" Batman!")
 
 /*******************************************
        Iteration 4 | Fruite Slice
@@ -40,9 +39,12 @@ const string3 = "Na";
 // Using the string method .slice(), access and print to the console the name of your favorite fruit from a given string
 
 const fruit = "banana apple mango orange lemon kiwi watermelon grapes pear pineapple";
-
+const ourFavoriteFruit = "kiwi";
+/*const beginning = ourFavoriteFruit.indexOf(ourFavoriteFruit);
+const end = beginning + ourFavoriteFruit.length;
+*/
 // Your code here...
-
+console.log (ourFavoriteFruit.slice(0, ourFavoriteFruit.length));
 
 
 /***************************************************
@@ -58,11 +60,17 @@ const funnyHeadline2 = "Students Cook & Serve Grandparents";
 
 // Check the first headline
 // Your code here ...
-
+if (funnyHeadline1.includes("oxygen")){
+    console.log("The string includes the word 'oxygen'")
+} else {
+console.log("The string does not include the word 'oxygen'")}
 
 // Check the second headline
 // Your code here ...
-
+if (funnyHeadline2.includes("oxygen")){
+    console.log("The string includes the word 'oxygen'")
+} else {
+console.log("The string does not include the word 'oxygen'")}
 
 
 /*******************************************
@@ -75,7 +83,7 @@ const string4 = "zEAWrTC9EgtxmK9w1";
 
 // a) Print the string length
 // Your code here ...
-
-
+console.log(string4.length);
 // b) Print the last character in the string
 // Your code here ...
+console.log(string4[string4.length -1]);
