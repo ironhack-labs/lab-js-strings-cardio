@@ -7,7 +7,8 @@ const string1 = "My favorite dessert is jello";
 
 // Your code here...
 
-
+const indexOfJ = string1.indexOf('j');
+console.log(indexOfJ);
 
 
 /*******************************************
@@ -19,7 +20,8 @@ const string2 = "ABCDEFGHJKLO";
 
 // Your code here...
 
-
+const coolString = string2[2] + string2[14] + string2[14] + string2[11];
+console.log(coolString);
 
 
 /*****************************************************
