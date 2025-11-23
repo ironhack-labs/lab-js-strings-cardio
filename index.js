@@ -1,81 +1,67 @@
 /*******************************************
-    Iteration 1 | Find index of a character
+    Iteration 1.1 | Tongue Twister
 *******************************************/
-// Write code that prints out to the console the index of the character “j” in
+const s1 = "Fred";
+const s2 = "fed";
+const s3 = "Ted";
+const s4 = "bread";
+const s5 = "and";
 
-const string1 = "My favorite dessert is jello";
-
-// Your code here...
-
-
+const tongueTwister = `${s1} ${s2} ${s3} ${s4} ${s5} ${s3} ${s2} ${s1} ${s4}`;
+console.log(tongueTwister); 
+// Output: "Fred fed Ted bread and Ted fed Fred bread"
 
 
 /*******************************************
-    Iteration 2 | Concatenate Characters
+    Iteration 1.2 | Camel Tail
 *******************************************/
-// Make a new string with the text "COOL" by using only the characters available in the provided string and the bracket notation
+const part1 = "java";
+const part2 = "script";
 
-const string2 = "ABCDEFGHJKLO";
+const result = part1.slice(0, -1) + part1.slice(-1).toUpperCase() +
+               part2.slice(0, -1) + part2.slice(-1).toUpperCase();
 
-// Your code here...
-
-
-
-
-/*****************************************************
-    Iteration 3 | Repeat a String and Concatenate
-*****************************************************/
-// Using the method .repeat() and the provided string, print out the text "NaNaNaNa Batman!" in the console.
-
-const string3 = "Na";
-
-// Your code here...
-
-
+console.log(result); 
+// Output: "javAscripT"
 
 
 /*******************************************
-       Iteration 4 | Fruite Slice
+    Iteration 2.1 | Calculate Tip
 *******************************************/
-// Using the string method .slice(), access and print to the console the name of your favorite fruit from a given string
+const billTotal = 84;
+const tipAmount = billTotal * 0.15;
 
-const fruit = "banana apple mango orange lemon kiwi watermelon grapes pear pineapple";
-
-// Your code here...
-
-
-
-/***************************************************
-    Iteration 5 | Check If Strings Include a Word
-***************************************************/
-// Using the string method .include(), check if the below strings with funny newspaper headlines include the word "oxygen".
-// If a string includes the word "oxygen" print to the console message "The string includes the word 'oxygen'",
-// else print the message "The string does not include the word 'oxygen'".
-
-const funnyHeadline1 = "Breathing oxygen linked to staying alive";
-const funnyHeadline2 = "Students Cook & Serve Grandparents";
-
-
-// Check the first headline
-// Your code here ...
-
-
-// Check the second headline
-// Your code here ...
-
+console.log(tipAmount); 
+// Output: 12.6
 
 
 /*******************************************
-       Iteration 6 | String Length
+    Iteration 2.2 | Generate Random Number
 *******************************************/
-// Using console.log() print to the console the length of the string and the last character in the string.
+const randomNumber = Math.floor(Math.random() * 10) + 1;
 
-const string4 = "zEAWrTC9EgtxmK9w1";
-
-
-// a) Print the string length
-// Your code here ...
+console.log(randomNumber); 
+// Output: any integer between 1 and 10
 
 
-// b) Print the last character in the string
-// Your code here ...
+/*******************************************
+    Iteration 3.1 | Booleans
+*******************************************/
+const a = true;
+const b = false;
+
+const expression1 = a && b;  // false
+const expression2 = a || b;  // true
+const expression3 = !a && b; // false
+const expression4 = !(a && b);// true
+const expression5 = !a || !b;// true
+const expression6 = !(a || b);// false
+const expression7 = a && a;  // true
+
+console.log(expression1); // false
+console.log(expression2); // true
+console.log(expression3); // false
+console.log(expression4); // true
+console.log(expression5); // true
+console.log(expression6); // false
+console.log(expression7); // true
