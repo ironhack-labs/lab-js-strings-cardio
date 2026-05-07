@@ -3,9 +3,10 @@
 *******************************************/
 // Write code that prints out to the console the index of the character “j” in
 
-const string1 = "My favorite dessert is jello";
-
-// Your code here...
+const string1 = "My favorite dessert is jello"; 
+for( let i=0; i<string1.length; i++)
+    if(string1[i] === "j")
+        console.log([i])
 
 
 
