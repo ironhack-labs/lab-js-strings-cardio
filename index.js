@@ -6,9 +6,12 @@
 const string1 = "My favorite dessert is jello";
 
 // Your code here...
-
-
-
+const indexOfJ = string1.indexOf("j");
+if (indexOfJ !== -1) {
+    console.log(`The index of "j" is: ${indexOfJ}`);
+} else {
+    console.log('The character "j" is not found in the string.');
+}
 
 /*******************************************
     Iteration 2 | Concatenate Characters
@@ -18,7 +21,8 @@ const string1 = "My favorite dessert is jello";
 const string2 = "ABCDEFGHJKLO";
 
 // Your code here...
-
+const newString = string2[2] + string2[11] + string2[11] + string2[10];
+console.log(newString);
 
 
 
@@ -30,7 +34,8 @@ const string2 = "ABCDEFGHJKLO";
 const string3 = "Na";
 
 // Your code here...
-
+const repeatedString = string3.repeat(4);
+console.log(repeatedString);
 
 
 
@@ -42,8 +47,13 @@ const string3 = "Na";
 const fruit = "banana apple mango orange lemon kiwi watermelon grapes pear pineapple";
 
 // Your code here...
-
-
+const startIndex = fruit.indexOf("pear");
+if (startIndex !== -1) {
+    const favoriteFruit = fruit.slice(startIndex, startIndex + "pear".length);
+    console.log("My favorite fruit is: " + favoriteFruit);
+} else {
+    console.error("Fruit not found.");
+}
 
 /***************************************************
     Iteration 5 | Check If Strings Include a Word
@@ -58,11 +68,24 @@ const funnyHeadline2 = "Students Cook & Serve Grandparents";
 
 // Check the first headline
 // Your code here ...
-
+function checkForOxygen(headline) {
+    if (headline.includes("oxygen")) {
+        console.log("The string includes the word 'oxygen'");
+    } else {
+        console.log("The string does not include the word 'oxygen'");
+    }
+}
 
 // Check the second headline
 // Your code here ...
-
+ if (headline.toLowerCase().includes("oxygen")) {
+        console.log("The string includes the word 'oxygen'");
+    } else {
+        console.log("The string does not include the word 'oxygen'");
+    }
+}
+checkForOxygen(funnyHeadline1);
+checkForOxygen(funnyHeadline2);
 
 
 /*******************************************
@@ -75,7 +98,16 @@ const string4 = "zEAWrTC9EgtxmK9w1";
 
 // a) Print the string length
 // Your code here ...
+if (typeof string4 === "string" && string4.length > 0) {
+    const stringLength = string4.length;
+    console.log(`The length of the string is: ${stringLength}`);
+    
 
 
 // b) Print the last character in the string
 // Your code here ...
+const lastCharacter = string4[stringLength - 1];
+console.log(`The last character in the string is: ${lastCharacter}`);
+} else {
+    console.error("Invalid string provided.");
+}
