@@ -4,7 +4,8 @@
 // Write code that prints out to the console the index of the character “j” in
 
 const string1 = "My favorite dessert is jello";
-
+const str = string1.indexOf("j");
+console.log(string1[str]);
 // Your code here...
 
 
@@ -19,7 +20,9 @@ const string2 = "ABCDEFGHJKLO";
 
 // Your code here...
 
+const newString = string2[2] + string2[string2.length - 1] + string2[string2.length - 1] + string2[string2.length - 2];
 
+console.log(newString);
 
 
 /*****************************************************
@@ -28,7 +31,7 @@ const string2 = "ABCDEFGHJKLO";
 // Using the method .repeat() and the provided string, print out the text "NaNaNaNa Batman!" in the console.
 
 const string3 = "Na";
-
+console.log(string3.repeat(4) + " " + "Batman!");
 // Your code here...
 
 
@@ -42,8 +45,9 @@ const string3 = "Na";
 const fruit = "banana apple mango orange lemon kiwi watermelon grapes pear pineapple";
 
 // Your code here...
-
-
+ 
+const favoriteFruit = fruit.indexOf("watermelon");
+console.log(fruit.slice(favoriteFruit, favoriteFruit + 10));
 
 /***************************************************
     Iteration 5 | Check If Strings Include a Word
@@ -58,12 +62,19 @@ const funnyHeadline2 = "Students Cook & Serve Grandparents";
 
 // Check the first headline
 // Your code here ...
-
-
+if(funnyHeadline1.includes("oxygen")) {
+    console.log("The string includes the word 'oxygen'");
+} else {
+    console.log("The string does not include the word 'oxygen'");
+}
 // Check the second headline
 // Your code here ...
 
-
+if(funnyHeadline2.includes("oxygen")) {
+    console.log("The string includes the word 'oxygen'");
+} else {
+    console.log("The string does not include the word 'oxygen'");
+}
 
 /*******************************************
        Iteration 6 | String Length
@@ -75,7 +86,8 @@ const string4 = "zEAWrTC9EgtxmK9w1";
 
 // a) Print the string length
 // Your code here ...
-
+console.log(string4.length);
 
 // b) Print the last character in the string
 // Your code here ...
+console.log(string4[string4.length - 1]);
