@@ -17,8 +17,8 @@ console.log(string1.indexOf("j")); // 23
 const string2 = "ABCDEFGHJKLO";
 
 // Your code here...
-const result = string2[2] + string2[11] + string2[11] + string2[10];
-console.log(result);
+const resultString2 = string2[2] + string2[11] + string2[11] + string2[10];
+console.log(resultString2);
 
 
 /*****************************************************
@@ -29,8 +29,8 @@ console.log(result);
 const string3 = "Na";
 
 // Your code here...
-const result = string3.repeat(4) + " Batman!";
-console.log(result);
+const resultString3 = string3.repeat(4) + " Batman!";
+console.log(resultString3);
 
 
 /*******************************************
@@ -41,7 +41,9 @@ console.log(result);
 const fruit = "banana apple mango orange lemon kiwi watermelon grapes pear pineapple";
 
 // Your code here...
+const favoriteFruit = fruit.slice(32, 36);
 
+console.log(favoriteFruit);
 
 
 /***************************************************
