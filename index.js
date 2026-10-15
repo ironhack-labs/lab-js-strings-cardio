@@ -5,10 +5,9 @@
 
 const string1 = "My favorite dessert is jello";
 
-// Your code here...
+console.log(string1.indexOf("j"));
 
-
-
+console.log(string1[23]);
 
 /*******************************************
     Iteration 2 | Concatenate Characters
@@ -17,10 +16,9 @@ const string1 = "My favorite dessert is jello";
 
 const string2 = "ABCDEFGHJKLO";
 
-// Your code here...
+const concatString = string2[2] + string2[string2.length - 1] + string2[string2.length - 1] + string2[string2.length - 2];
 
-
-
+console.log(concatString);
 
 /*****************************************************
     Iteration 3 | Repeat a String and Concatenate
@@ -29,10 +27,9 @@ const string2 = "ABCDEFGHJKLO";
 
 const string3 = "Na";
 
-// Your code here...
+const batmanSong = (string3.repeat(4) + " Batman!");
 
-
-
+console.log(batmanSong)
 
 /*******************************************
        Iteration 4 | Fruite Slice
@@ -41,29 +38,49 @@ const string3 = "Na";
 
 const fruit = "banana apple mango orange lemon kiwi watermelon grapes pear pineapple";
 
-// Your code here...
+// console.log(fruit.length); - 69
 
+const myFavFruit = fruit.slice(55, 59);
 
+console.log(myFavFruit);
 
 /***************************************************
     Iteration 5 | Check If Strings Include a Word
 ***************************************************/
 // Using the string method .include(), check if the below strings with funny newspaper headlines include the word "oxygen".
+// 
 // If a string includes the word "oxygen" print to the console message "The string includes the word 'oxygen'",
 // else print the message "The string does not include the word 'oxygen'".
 
 const funnyHeadline1 = "Breathing oxygen linked to staying alive";
 const funnyHeadline2 = "Students Cook & Serve Grandparents";
 
+const oxygenFound = "This string includes the word 'oxygen'";
+const oxygenNotFound = "This string does not include the word 'oxygen'";
 
 // Check the first headline
-// Your code here ...
 
+if (funnyHeadline1.includes("oxygen")) {
+
+	console.log(oxygenFound);
+}
+
+else {
+
+	console.log(oxygenNotFound);
+}
 
 // Check the second headline
-// Your code here ...
 
+if (funnyHeadline2.includes("oxygen")) {
 
+	console.log(oxygenFound);
+}
+
+else {
+
+	console.log(oxygenNotFound);
+}
 
 /*******************************************
        Iteration 6 | String Length
@@ -74,8 +91,9 @@ const string4 = "zEAWrTC9EgtxmK9w1";
 
 
 // a) Print the string length
-// Your code here ...
 
+console.log(string4.length);
 
 // b) Print the last character in the string
-// Your code here ...
+
+console.log(string4.length - 1);
