@@ -5,7 +5,7 @@
 
 const string1 = "My favorite dessert is jello";
 
-// Your code here...
+console.log(string1.indexOf("j"));
 
 
 
@@ -16,9 +16,9 @@ const string1 = "My favorite dessert is jello";
 // Make a new string with the text "COOL" by using only the characters available in the provided string and the bracket notation
 
 const string2 = "ABCDEFGHJKLO";
-
-// Your code here...
-
+const newString = string2[2] + string2[11] + string2[11] + string2[10];
+console.log(newString);
+//use of array to get the idex of specifc charcatcers
 
 
 
@@ -28,8 +28,8 @@ const string2 = "ABCDEFGHJKLO";
 // Using the method .repeat() and the provided string, print out the text "NaNaNaNa Batman!" in the console.
 
 const string3 = "Na";
-
-// Your code here...
+// use of .repeat() to get the numnber of copies
+console.log(`${string3.repeat(4)}`,"Batman!");
 
 
 
@@ -40,8 +40,13 @@ const string3 = "Na";
 // Using the string method .slice(), access and print to the console the name of your favorite fruit from a given string
 
 const fruit = "banana apple mango orange lemon kiwi watermelon grapes pear pineapple";
+console.log(fruit.indexOf("orange") , fruit.indexOf("watermelon"));
+const favFruit = fruit.slice(19,25);
+const newFavfruit = fruit.slice(37,47);
+//useof .indexOf() to get postion of the first occurance
+// sue of .slice() to extract a section of string and return new one without modifying the original one
+console.log(`"my fav fruits are ${(favFruit)} and ${(newFavfruit)}"`);
 
-// Your code here...
 
 
 
@@ -55,15 +60,33 @@ const fruit = "banana apple mango orange lemon kiwi watermelon grapes pear pinea
 const funnyHeadline1 = "Breathing oxygen linked to staying alive";
 const funnyHeadline2 = "Students Cook & Serve Grandparents";
 
+// use of .includes() alues performs a case-sensitive search to determine whether a given string may be found within this string, returning true or false as appropriate
 
-// Check the first headline
-// Your code here ...
+if(funnyHeadline1.includes("oxygen")){
+    console.log("The string includes the word 'oxygen'");
+} else {
+    console.log("The string does not include the word 'oxygen'");
+}
 
+if(funnyHeadline2.includes("oxygen")){
+    console.log("The string includes the word 'oxygen'");
+} else{
+    console.log("The string does not include the word 'oxygen'");
+}
 
-// Check the second headline
-// Your code here ...
+/*
+if(funnyHeadline2.includes("Grandparents")){
+    console.log("Yes, it's true Students Cook & Serve Grandparents");
+} else {
+    console.log("no it's not true Students Cook & Serve Grandparents");
+}
 
-
+if(funnyHeadline2.includes("kids")){
+    console.log("Yes, it's true Students Cook & Serve Grandparents");
+} else {
+    console.log("no it's not true Students Cook & Serve Grandparents");
+}
+*/
 
 /*******************************************
        Iteration 6 | String Length
@@ -74,8 +97,10 @@ const string4 = "zEAWrTC9EgtxmK9w1";
 
 
 // a) Print the string length
-// Your code here ...
+console.log(string4.length);
 
 
 // b) Print the last character in the string
-// Your code here ...
+//trying directly with array index  and length
+console.log(string4[16]);
+console.log(string4[string4.length -1]);
