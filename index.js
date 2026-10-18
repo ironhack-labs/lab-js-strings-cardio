@@ -5,7 +5,9 @@
 
 const string1 = "My favorite dessert is jello";
 
-// Your code here...
+// console.log(string1.indexOf("j")); I found the problem and that is index of 23 
+
+console.log(string1.slice(23, -4)); // this might be the solution
 
 
 
@@ -15,9 +17,10 @@ const string1 = "My favorite dessert is jello";
 *******************************************/
 // Make a new string with the text "COOL" by using only the characters available in the provided string and the bracket notation
 
-const string2 = "ABCDEFGHJKLO";
+const string2 = "ABCDEFGHJKLO"; 
 
-// Your code here...
+console.log(string2[2] + string2[11] + string2[11] + string2[10]); 
+
 
 
 
@@ -27,9 +30,12 @@ const string2 = "ABCDEFGHJKLO";
 *****************************************************/
 // Using the method .repeat() and the provided string, print out the text "NaNaNaNa Batman!" in the console.
 
-const string3 = "Na";
+const string3 = "Na"; 
 
-// Your code here...
+const stringTree = "Batman!"; 
+
+console.log(`${string3.repeat(4)} ${stringTree.repeat(1)}`);
+
 
 
 
@@ -41,7 +47,9 @@ const string3 = "Na";
 
 const fruit = "banana apple mango orange lemon kiwi watermelon grapes pear pineapple";
 
-// Your code here...
+console.log(fruit.slice(0, 7));
+
+
 
 
 
@@ -53,29 +61,45 @@ const fruit = "banana apple mango orange lemon kiwi watermelon grapes pear pinea
 // else print the message "The string does not include the word 'oxygen'".
 
 const funnyHeadline1 = "Breathing oxygen linked to staying alive";
+ 
+
+// Check the first headline 
+ if (funnyHeadline1.includes("oxygen")) {
+    console.log("The string includes the word 'oxygen'")
+ } else {
+    console.log("Breathing oxygen linked to staying alive")
+ }  
+
+ console.log(funnyHeadline1.includes("oxygen")); 
+
+
+// Check the second headline 
 const funnyHeadline2 = "Students Cook & Serve Grandparents";
 
+if (funnyHeadline2.includes("oxygen")) { 
+    console.log("The string includes the word 'oxygen`")
+} else {
+    console.log("Students Cook & Serve Grandparents")
+} 
 
-// Check the first headline
-// Your code here ...
+console.log(funnyHeadline2.includes("oxygen"));
 
 
-// Check the second headline
-// Your code here ...
-
-
+ 
 
 /*******************************************
        Iteration 6 | String Length
 *******************************************/
 // Using console.log() print to the console the length of the string and the last character in the string.
 
-const string4 = "zEAWrTC9EgtxmK9w1";
+const string4 = "zEAWrTC9EgtxmK9w1"; 
 
 
 // a) Print the string length
-// Your code here ...
+
+console.log(`${string4.length}`);
 
 
 // b) Print the last character in the string
-// Your code here ...
+
+console.log(string4.charAt(16));
