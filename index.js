@@ -4,8 +4,8 @@
 // Write code that prints out to the console the index of the character “j” in
 
 const string1 = "My favorite dessert is jello";
-
-// Your code here...
+const findindex= string1.slice(-5,-4)
+console.log(findindex)
 
 
 
@@ -16,6 +16,8 @@ const string1 = "My favorite dessert is jello";
 // Make a new string with the text "COOL" by using only the characters available in the provided string and the bracket notation
 
 const string2 = "ABCDEFGHJKLO";
+const Concatenate=string2[2]+string2[11]+string2[11]+string2[10]
+console.log(Concatenate)
 
 // Your code here...
 
@@ -28,7 +30,8 @@ const string2 = "ABCDEFGHJKLO";
 // Using the method .repeat() and the provided string, print out the text "NaNaNaNa Batman!" in the console.
 
 const string3 = "Na";
-
+const Repeat= string3.repeat(3)
+console.log(Repeat+" "+ "Batman!")
 // Your code here...
 
 
@@ -40,6 +43,8 @@ const string3 = "Na";
 // Using the string method .slice(), access and print to the console the name of your favorite fruit from a given string
 
 const fruit = "banana apple mango orange lemon kiwi watermelon grapes pear pineapple";
+const fruitSlice= fruit.slice(7,12)
+console.log(fruitSlice)
 
 // Your code here...
 
@@ -54,8 +59,14 @@ const fruit = "banana apple mango orange lemon kiwi watermelon grapes pear pinea
 
 const funnyHeadline1 = "Breathing oxygen linked to staying alive";
 const funnyHeadline2 = "Students Cook & Serve Grandparents";
+const word = "oxygen"
+if(funnyHeadline1.includes(word))
+    {console.log(`the string includes the word ${word}`)}
+else {console.log(`The string does not include the word ${word}`)}
 
-
+if(funnyHeadline2.includes(word))
+    {console.log(`the string includes the word ${word}`)}
+else {console.log(`The string does not include the word ${word}`)}
 // Check the first headline
 // Your code here ...
 
@@ -71,7 +82,10 @@ const funnyHeadline2 = "Students Cook & Serve Grandparents";
 // Using console.log() print to the console the length of the string and the last character in the string.
 
 const string4 = "zEAWrTC9EgtxmK9w1";
-
+const stringlength =string4.length
+console.log(stringlength)
+const lastCharacter= string4[string4.length-1]
+console.log(lastCharacter)
 
 // a) Print the string length
 // Your code here ...
